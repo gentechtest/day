@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  <dependencies>
+  <group name="Header" depends-on="Login"></group>
+   <group name="SocialLinks" depends-on="Login"></group>
+  </dependencies>
+  <listeners>
+  <listener class-name="basic.Log"></listener>
+  </listeners>
+    <classes>
+      <class name="user.Login"/>
+      <class name="content.Headers"/>
+      <class name="content.SocialLinks"/>
+      <class name="content.Bloks"/>
+      <class name="content.BlockTitles"/>
+      <class name="content.Genres"/>
+      <class name="content.Artists"/>
+       <class name="content.Playmusic"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
