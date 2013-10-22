@@ -2,134 +2,134 @@
 <testng-results skipped="0" failed="0" total="22" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="92515" started-at="2013-10-22T15:41:17Z" finished-at="2013-10-22T15:42:49Z">
+  <suite name="Suite" duration-ms="103919" started-at="2013-10-22T15:59:05Z" finished-at="2013-10-22T16:00:49Z">
     <groups>
       <group name="Login">
-        <method signature="Login.LogIn()[pri:0, instance:user.Login@56702d3c]" name="LogIn" class="user.Login"/>
+        <method signature="Login.LogIn()[pri:0, instance:user.Login@36254f63]" name="LogIn" class="user.Login"/>
       </group> <!-- Login -->
       <group name="Header">
-        <method signature="Headers.AzerHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="AzerHeader" class="content.Headers"/>
-        <method signature="Headers.MusicHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="MusicHeader" class="content.Headers"/>
-        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="NovinkiHeader" class="content.Headers"/>
-        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="PlaylistHeader" class="content.Headers"/>
-        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="UploadHeader" class="content.Headers"/>
+        <method signature="Headers.AzerHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="AzerHeader" class="content.Headers"/>
+        <method signature="Headers.MusicHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="MusicHeader" class="content.Headers"/>
+        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="NovinkiHeader" class="content.Headers"/>
+        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="PlaylistHeader" class="content.Headers"/>
+        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="UploadHeader" class="content.Headers"/>
       </group> <!-- Header -->
       <group name="Soclinks">
-        <method signature="SocialLinks.socialOnAzer()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnAzer" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnMusic()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnMusic" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnNovinki()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnNovinki" class="content.SocialLinks"/>
-        <method signature="SocialLinks.socialOnPlaylist()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnPlaylist" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnAzer()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnAzer" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnMusic()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnMusic" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnNovinki()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnNovinki" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnPlaylist()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnPlaylist" class="content.SocialLinks"/>
       </group> <!-- Soclinks -->
     </groups>
-    <test name="Test" duration-ms="92515" started-at="2013-10-22T15:41:17Z" finished-at="2013-10-22T15:42:49Z">
+    <test name="Test" duration-ms="103919" started-at="2013-10-22T15:59:05Z" finished-at="2013-10-22T16:00:49Z">
       <class name="content.Artists">
-        <test-method status="PASS" signature="MusicArtists()[pri:0, instance:content.Artists@3aaed2e3]" name="MusicArtists" duration-ms="3065" started-at="2013-10-22T18:41:47Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð°Ñ€Ñ‚Ð¸ÑÑ‚Ð¾Ð² Ð½Ð° &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:41:50Z">
+        <test-method status="PASS" signature="MusicArtists()[pri:0, instance:content.Artists@35fe48de]" name="MusicArtists" duration-ms="2887" started-at="2013-10-22T18:59:46Z" description="Ïðîâåðÿåò îòîáðàæåíèå àðòèñòîâ íà &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T18:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MusicArtists -->
-        <test-method status="PASS" signature="NovinkiArtists()[pri:0, instance:content.Artists@3aaed2e3]" name="NovinkiArtists" duration-ms="3023" started-at="2013-10-22T18:42:07Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð°Ñ€Ñ‚Ð¸ÑÑ‚Ð¾Ð² Ð½Ð° &lt;&lt;ÐÐ¾Ð²Ð¸Ð½ÐºÐ¸&gt;&gt;" finished-at="2013-10-22T18:42:10Z">
+        <test-method status="PASS" signature="NovinkiArtists()[pri:0, instance:content.Artists@35fe48de]" name="NovinkiArtists" duration-ms="4555" started-at="2013-10-22T19:00:02Z" description="Ïðîâåðÿåò îòîáðàæåíèå àðòèñòîâ íà &lt;&lt;Íîâèíêè&gt;&gt;" finished-at="2013-10-22T19:00:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NovinkiArtists -->
-        <test-method status="PASS" signature="AzerArtists()[pri:0, instance:content.Artists@3aaed2e3]" name="AzerArtists" duration-ms="2906" started-at="2013-10-22T18:42:18Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð°Ñ€Ñ‚Ð¸ÑÑ‚Ð¾Ð² Ð½Ð° &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:21Z">
+        <test-method status="PASS" signature="AzerArtists()[pri:0, instance:content.Artists@35fe48de]" name="AzerArtists" duration-ms="2703" started-at="2013-10-22T19:00:14Z" description="Ïðîâåðÿåò îòîáðàæåíèå àðòèñòîâ íà &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T19:00:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AzerArtists -->
       </class> <!-- content.Artists -->
       <class name="content.BlockTitles">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.BlockTitles@c61a8f8]" name="getWebDriver" is-config="true" duration-ms="10" started-at="2013-10-22T18:41:17Z" finished-at="2013-10-22T18:41:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="MusicTitles()[pri:0, instance:content.BlockTitles@c61a8f8]" name="MusicTitles" duration-ms="2237" started-at="2013-10-22T18:41:42Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¸Ð¼ÐµÐ½ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð° &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:41:44Z">
+        <test-method status="PASS" signature="MusicTitles()[pri:0, instance:content.BlockTitles@30a945f8]" name="MusicTitles" duration-ms="2279" started-at="2013-10-22T18:59:42Z" description="Ïðîâåðÿåò îòîáðàæåíèå èìåí áëîêîâ íà &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T18:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MusicTitles -->
-        <test-method status="PASS" signature="NovinkiTitles()[pri:0, instance:content.BlockTitles@c61a8f8]" name="NovinkiTitles" duration-ms="3736" started-at="2013-10-22T18:42:00Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¸Ð¼ÐµÐ½ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð°  &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:42:04Z">
+        <test-method status="PASS" signature="NovinkiTitles()[pri:0, instance:content.BlockTitles@30a945f8]" name="NovinkiTitles" duration-ms="2649" started-at="2013-10-22T18:59:57Z" description="Ïðîâåðÿåò îòîáðàæåíèå èìåí áëîêîâ íà  &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T19:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NovinkiTitles -->
-        <test-method status="PASS" signature="AzerTitles()[pri:0, instance:content.BlockTitles@c61a8f8]" name="AzerTitles" duration-ms="2453" started-at="2013-10-22T18:42:13Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð°  &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:15Z">
+        <test-method status="PASS" signature="AzerTitles()[pri:0, instance:content.BlockTitles@30a945f8]" name="AzerTitles" duration-ms="2384" started-at="2013-10-22T19:00:09Z" description="Ïðîâåðÿåò îòîáðàæåíèå áëîêîâ íà  &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T19:00:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AzerTitles -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.BlockTitles@c61a8f8]" name="thearDown" is-config="true" duration-ms="316" started-at="2013-10-22T18:42:49Z" finished-at="2013-10-22T18:42:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thearDown -->
       </class> <!-- content.BlockTitles -->
       <class name="content.SocialLinks">
-        <test-method status="PASS" signature="socialOnMusic()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnMusic" duration-ms="2382" started-at="2013-10-22T18:41:44Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð±Ð»Ð¾Ðº ÑÐ¾Ñ†ÑÐµÑ‚ÐµÐ¹ Ð½Ð° &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:41:47Z">
+        <test-method status="PASS" signature="socialOnMusic()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnMusic" duration-ms="2365" started-at="2013-10-22T18:59:44Z" description="Ïðîâåðÿåì áëîê ñîöñåòåé íà &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T18:59:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialOnMusic -->
-        <test-method status="PASS" signature="socialOnNovinki()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnNovinki" duration-ms="3528" started-at="2013-10-22T18:42:04Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð±Ð»Ð¾Ðº ÑÐ¾Ñ†ÑÐµÑ‚ÐµÐ¹ Ð½Ð° &lt;&lt;ÐÐ¾Ð²Ð¸Ð½ÐºÐ¸&gt;&gt;" finished-at="2013-10-22T18:42:07Z">
+        <test-method status="PASS" signature="socialOnNovinki()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnNovinki" duration-ms="2457" started-at="2013-10-22T19:00:00Z" description="Ïðîâåðÿåì áëîê ñîöñåòåé íà &lt;&lt;Íîâèíêè&gt;&gt;" finished-at="2013-10-22T19:00:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialOnNovinki -->
-        <test-method status="PASS" signature="socialOnAzer()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnAzer" duration-ms="2816" started-at="2013-10-22T18:42:15Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð±Ð»Ð¾Ðº ÑÐ¾Ñ†ÑÐµÑ‚ÐµÐ¹ Ð½Ð° &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:18Z">
+        <test-method status="PASS" signature="socialOnAzer()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnAzer" duration-ms="2593" started-at="2013-10-22T19:00:11Z" description="Ïðîâåðÿåì áëîê ñîöñåòåé íà &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T19:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialOnAzer -->
-        <test-method status="PASS" signature="socialOnPlaylist()[pri:0, instance:content.SocialLinks@4ee15284]" name="socialOnPlaylist" duration-ms="2339" started-at="2013-10-22T18:42:23Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð±Ð»Ð¾Ðº ÑÐ¾Ñ†ÑÐµÑ‚ÐµÐ¹ Ð½Ð° &lt;&lt;ÐœÐ¾Ð¹ Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚&gt;&gt;" finished-at="2013-10-22T18:42:26Z">
+        <test-method status="PASS" signature="socialOnPlaylist()[pri:0, instance:content.SocialLinks@238bb76a]" name="socialOnPlaylist" duration-ms="2113" started-at="2013-10-22T19:00:19Z" description="Ïðîâåðÿåì áëîê ñîöñåòåé íà &lt;&lt;Ìîé ïëåéëèñò&gt;&gt;" finished-at="2013-10-22T19:00:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialOnPlaylist -->
       </class> <!-- content.SocialLinks -->
       <class name="content.Genres">
-        <test-method status="PASS" signature="MusicGenres()[pri:0, instance:content.Genres@5ea9ea79]" name="MusicGenres" duration-ms="3657" started-at="2013-10-22T18:41:38Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¶Ð°Ð½Ñ€Ð¾Ð² Ð½Ð° &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:41:42Z">
+        <test-method status="PASS" signature="MusicGenres()[pri:0, instance:content.Genres@3930b5bd]" name="MusicGenres" duration-ms="2973" started-at="2013-10-22T18:59:39Z" description="Ïðîâåðÿåò îòîáðàæåíèå æàíðîâ íà &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T18:59:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MusicGenres -->
-        <test-method status="PASS" signature="NovinkiGenres()[pri:0, instance:content.Genres@5ea9ea79]" name="NovinkiGenres" duration-ms="7135" started-at="2013-10-22T18:41:53Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¶Ð°Ð½Ñ€Ð¾Ð² Ð½Ð° &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:00Z">
+        <test-method status="PASS" signature="NovinkiGenres()[pri:0, instance:content.Genres@3930b5bd]" name="NovinkiGenres" duration-ms="3503" started-at="2013-10-22T18:59:53Z" description="Ïðîâåðÿåò îòîáðàæåíèå æàíðîâ íà &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T18:59:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NovinkiGenres -->
       </class> <!-- content.Genres -->
       <class name="user.Login">
-        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@56702d3c]" name="LogIn" duration-ms="13134" started-at="2013-10-22T18:41:17Z" description="Testing login" finished-at="2013-10-22T18:41:30Z">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:user.Login@36254f63]" name="getWebDriver" is-config="true" duration-ms="10" started-at="2013-10-22T18:59:05Z" finished-at="2013-10-22T18:59:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebDriver -->
+        <test-method status="PASS" signature="LogIn()[pri:0, instance:user.Login@36254f63]" name="LogIn" duration-ms="26121" started-at="2013-10-22T18:59:05Z" description="Òåñòèðóåò ëîãèí" finished-at="2013-10-22T18:59:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:user.Login@36254f63]" name="thearDown" is-config="true" duration-ms="329" started-at="2013-10-22T19:00:48Z" finished-at="2013-10-22T19:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
       </class> <!-- user.Login -->
       <class name="content.Bloks">
-        <test-method status="PASS" signature="blocksOnMusic()[pri:0, instance:content.Bloks@6560de7c]" name="blocksOnMusic" duration-ms="3191" started-at="2013-10-22T18:41:50Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð° &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:41:53Z">
+        <test-method status="PASS" signature="blocksOnMusic()[pri:0, instance:content.Bloks@30dbf425]" name="blocksOnMusic" duration-ms="4361" started-at="2013-10-22T18:59:49Z" description="Ïðîâåðÿåò îòîáðàæåíèå áëîêîâ íà &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T18:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blocksOnMusic -->
-        <test-method status="PASS" signature="blocksOnNovinki()[pri:0, instance:content.Bloks@6560de7c]" name="blocksOnNovinki" duration-ms="2497" started-at="2013-10-22T18:42:10Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð° &lt;&lt;ÐÐ¾Ð²Ð¸Ð½ÐºÐ¸&gt;&gt;" finished-at="2013-10-22T18:42:13Z">
+        <test-method status="PASS" signature="blocksOnNovinki()[pri:0, instance:content.Bloks@30dbf425]" name="blocksOnNovinki" duration-ms="2275" started-at="2013-10-22T19:00:07Z" description="Ïðîâåðÿåò îòîáðàæåíèå áëîêîâ íà &lt;&lt;Íîâèíêè&gt;&gt;" finished-at="2013-10-22T19:00:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blocksOnNovinki -->
-        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.Bloks@6560de7c]" name="CheckBlocks" duration-ms="2185" started-at="2013-10-22T18:42:21Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ð° &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:23Z">
+        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.Bloks@30dbf425]" name="CheckBlocks" duration-ms="2346" started-at="2013-10-22T19:00:17Z" description="Ïðîâåðÿåò îòîáðàæåíèå áëîêîâ íà &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T19:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckBlocks -->
       </class> <!-- content.Bloks -->
       <class name="content.PlayMusicOnLand">
-        <test-method status="PASS" signature="PlayMusic()[pri:0, instance:content.PlayMusicOnLand@4cdd13d9]" name="PlayMusic" duration-ms="8264" started-at="2013-10-22T18:41:30Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð¸Ð³Ñ€Ð°ÐµÑ‚ Ð»Ð¸ Ñ‚Ñ€ÐµÐº Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ Ð»ÐµÐ½Ð´Ð¸Ð½Ð³Ð°" finished-at="2013-10-22T18:41:38Z">
+        <test-method status="PASS" signature="PlayMusic()[pri:0, instance:content.PlayMusicOnLand@2ceba8a0]" name="PlayMusic" duration-ms="7851" started-at="2013-10-22T18:59:31Z" description="Ïðîâåðÿåò èãðàåò ëè òðåê íà ñòðàíèöå ëåíäèíãà" finished-at="2013-10-22T18:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlayMusic -->
       </class> <!-- content.PlayMusicOnLand -->
       <class name="content.Headers">
-        <test-method status="PASS" signature="MusicHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="MusicHeader" duration-ms="5599" depends-on-groups="Login" started-at="2013-10-22T18:42:26Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑˆÐ°Ð¿ÐºÐµ &lt;&lt;ÐœÑƒÐ·Ñ‹ÐºÐ°&gt;&gt;" finished-at="2013-10-22T18:42:31Z">
+        <test-method status="PASS" signature="MusicHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="MusicHeader" duration-ms="4488" depends-on-groups="Login" started-at="2013-10-22T19:00:21Z" description="Ïðîâåðÿåì ññûëêè íà øàïêå &lt;&lt;Ìóçûêà&gt;&gt;" finished-at="2013-10-22T19:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MusicHeader -->
-        <test-method status="PASS" signature="NovinkiHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="NovinkiHeader" duration-ms="5059" depends-on-groups="Login" started-at="2013-10-22T18:42:31Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑˆÐ°Ð¿ÐºÐµ &lt;&lt;ÐÐ¾Ð²Ð¸Ð½ÐºÐ¸&gt;&gt;" finished-at="2013-10-22T18:42:36Z">
+        <test-method status="PASS" signature="NovinkiHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="NovinkiHeader" duration-ms="4761" depends-on-groups="Login" started-at="2013-10-22T19:00:26Z" description="Ïðîâåðÿåì ññûëêè íà øàïêå &lt;&lt;Íîâèíêè&gt;&gt;" finished-at="2013-10-22T19:00:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NovinkiHeader -->
-        <test-method status="PASS" signature="AzerHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="AzerHeader" duration-ms="4652" depends-on-groups="Login" started-at="2013-10-22T18:42:36Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑˆÐ°Ð¿ÐºÐµ &lt;&lt;ÐÐ·ÐµÑ€Ð±Ð°Ð¹Ð´Ð¶Ð°Ð½ÑÐºÐ°Ñ&gt;&gt;" finished-at="2013-10-22T18:42:41Z">
+        <test-method status="PASS" signature="AzerHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="AzerHeader" duration-ms="5059" depends-on-groups="Login" started-at="2013-10-22T19:00:30Z" description="Ïðîâåðÿåì ññûëêè íà øàïêå &lt;&lt;Àçåðáàéäæàíñêàÿ&gt;&gt;" finished-at="2013-10-22T19:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AzerHeader -->
-        <test-method status="PASS" signature="PlaylistHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="PlaylistHeader" duration-ms="4514" depends-on-groups="Login" started-at="2013-10-22T18:42:41Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑˆÐ°Ð¿ÐºÐµ &lt;&lt;ÐœÐ¾Ð¹ Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚&gt;&gt;" finished-at="2013-10-22T18:42:45Z">
+        <test-method status="PASS" signature="PlaylistHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="PlaylistHeader" duration-ms="9054" depends-on-groups="Login" started-at="2013-10-22T19:00:35Z" description="Ïðîâåðÿåì ññûëêè íà øàïêå &lt;&lt;Ìîé ïëåéëèñò&gt;&gt;" finished-at="2013-10-22T19:00:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaylistHeader -->
-        <test-method status="PASS" signature="UploadHeader()[pri:0, instance:content.Headers@7aeeb9b1]" name="UploadHeader" duration-ms="3792" depends-on-groups="Login" started-at="2013-10-22T18:42:45Z" description="ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑˆÐ°Ð¿ÐºÐµ &lt;&lt;Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ&gt;&gt;" finished-at="2013-10-22T18:42:49Z">
+        <test-method status="PASS" signature="UploadHeader()[pri:0, instance:content.Headers@1cff1d4a]" name="UploadHeader" duration-ms="3782" depends-on-groups="Login" started-at="2013-10-22T19:00:44Z" description="Ïðîâåðÿåì ññûëêè íà øàïêå &lt;&lt;Çàãðóçèòü&gt;&gt;" finished-at="2013-10-22T19:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadHeader -->
