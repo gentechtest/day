@@ -1,33 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="5" failed="3" total="22" passed="14">
   <reporter-output>
+    <line>
+      <![CDATA[На странице http://music.day.az/249300-orxan-masalli-sensizliye-oyresmemisem-2013-giyas не играет трек]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26083" started-at="2013-10-21T14:01:27Z" finished-at="2013-10-21T14:01:53Z">
+  <suite name="Suite" duration-ms="128459" started-at="2013-10-22T15:37:02Z" finished-at="2013-10-22T15:39:11Z">
     <groups>
+      <group name="Login">
+        <method signature="Login.LogIn()[pri:0, instance:user.Login@769cb63b]" name="LogIn" class="user.Login"/>
+      </group> <!-- Login -->
+      <group name="Header">
+        <method signature="Headers.AzerHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="AzerHeader" class="content.Headers"/>
+        <method signature="Headers.MusicHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="MusicHeader" class="content.Headers"/>
+        <method signature="Headers.NovinkiHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="NovinkiHeader" class="content.Headers"/>
+        <method signature="Headers.PlaylistHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="PlaylistHeader" class="content.Headers"/>
+        <method signature="Headers.UploadHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="UploadHeader" class="content.Headers"/>
+      </group> <!-- Header -->
+      <group name="Soclinks">
+        <method signature="SocialLinks.socialOnAzer()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnAzer" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnPlaylist()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnPlaylist" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnMusic()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnMusic" class="content.SocialLinks"/>
+        <method signature="SocialLinks.socialOnNovinki()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnNovinki" class="content.SocialLinks"/>
+      </group> <!-- Soclinks -->
     </groups>
-    <test name="Default test" duration-ms="26083" started-at="2013-10-21T14:01:27Z" finished-at="2013-10-21T14:01:53Z">
-      <class name="content.Bloks">
-        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.Bloks@43d9349c]" name="getWebDriver" is-config="true" duration-ms="10453" started-at="2013-10-21T17:01:27Z" finished-at="2013-10-21T17:01:37Z">
+    <test name="Test" duration-ms="128459" started-at="2013-10-22T15:37:02Z" finished-at="2013-10-22T15:39:11Z">
+      <class name="content.Artists">
+        <test-method status="PASS" signature="MusicArtists()[pri:0, instance:content.Artists@2a801853]" name="MusicArtists" duration-ms="3919" started-at="2013-10-22T18:38:15Z" description="Проверяет отображение артистов на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicArtists -->
+        <test-method status="PASS" signature="NovinkiArtists()[pri:0, instance:content.Artists@2a801853]" name="NovinkiArtists" duration-ms="2628" started-at="2013-10-22T18:38:34Z" description="Проверяет отображение артистов на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-22T18:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NovinkiArtists -->
+        <test-method status="PASS" signature="AzerArtists()[pri:0, instance:content.Artists@2a801853]" name="AzerArtists" duration-ms="4005" started-at="2013-10-22T18:38:50Z" description="Проверяет отображение артистов на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:38:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AzerArtists -->
+      </class> <!-- content.Artists -->
+      <class name="content.BlockTitles">
+        <test-method status="PASS" signature="MusicTitles()[pri:0, instance:content.BlockTitles@70fc79cb]" name="MusicTitles" duration-ms="3437" started-at="2013-10-22T18:38:08Z" description="Проверяет отображение имен блоков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicTitles -->
+        <test-method status="PASS" signature="NovinkiTitles()[pri:0, instance:content.BlockTitles@70fc79cb]" name="NovinkiTitles" duration-ms="3510" started-at="2013-10-22T18:38:27Z" description="Проверяет отображение имен блоков на  &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NovinkiTitles -->
+        <test-method status="PASS" signature="AzerTitles()[pri:0, instance:content.BlockTitles@70fc79cb]" name="AzerTitles" duration-ms="5824" started-at="2013-10-22T18:38:40Z" description="Проверяет отображение блоков на  &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:38:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AzerTitles -->
+      </class> <!-- content.BlockTitles -->
+      <class name="content.SocialLinks">
+        <test-method status="PASS" signature="getWebDriver()[pri:0, instance:content.SocialLinks@2a789924]" name="getWebDriver" is-config="true" duration-ms="9" started-at="2013-10-22T18:37:02Z" finished-at="2013-10-22T18:37:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWebDriver -->
-        <test-method status="PASS" signature="blocksOnMusic()[pri:0, instance:content.Bloks@43d9349c]" name="blocksOnMusic" duration-ms="6480" started-at="2013-10-21T17:01:38Z" description="Проверяет отображение блоков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-21T17:01:44Z">
+        <test-method status="PASS" signature="socialOnMusic()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnMusic" duration-ms="3783" started-at="2013-10-22T18:38:11Z" description="Проверяем блок соцсетей на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blocksOnMusic -->
-        <test-method status="PASS" signature="blocksOnNovinki()[pri:0, instance:content.Bloks@43d9349c]" name="blocksOnNovinki" duration-ms="3630" started-at="2013-10-21T17:01:44Z" description="Проверяет отображение блоков на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-21T17:01:48Z">
+        </test-method> <!-- socialOnMusic -->
+        <test-method status="PASS" signature="socialOnNovinki()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnNovinki" duration-ms="3541" started-at="2013-10-22T18:38:30Z" description="Проверяем блок соцсетей на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-22T18:38:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blocksOnNovinki -->
-        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.Bloks@43d9349c]" name="CheckBlocks" duration-ms="5350" started-at="2013-10-21T17:01:48Z" description="Проверяет отображение блоков на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-21T17:01:53Z">
+        </test-method> <!-- socialOnNovinki -->
+        <test-method status="PASS" signature="socialOnAzer()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnAzer" duration-ms="3960" started-at="2013-10-22T18:38:46Z" description="Проверяем блок соцсетей на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:38:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckBlocks -->
-        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.Bloks@43d9349c]" name="thearDown" is-config="true" duration-ms="150" started-at="2013-10-21T17:01:53Z" finished-at="2013-10-21T17:01:53Z">
+        </test-method> <!-- socialOnAzer -->
+        <test-method status="FAIL" signature="socialOnPlaylist()[pri:0, instance:content.SocialLinks@2a789924]" name="socialOnPlaylist" duration-ms="11648" started-at="2013-10-22T18:38:58Z" description="Проверяем блок соцсетей на &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
+	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socialOnPlaylist -->
+        <test-method status="PASS" signature="thearDown()[pri:0, instance:content.SocialLinks@2a789924]" name="thearDown" is-config="true" duration-ms="629" started-at="2013-10-22T18:39:10Z" finished-at="2013-10-22T18:39:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thearDown -->
+      </class> <!-- content.SocialLinks -->
+      <class name="content.Genres">
+        <test-method status="PASS" signature="MusicGenres()[pri:0, instance:content.Genres@6c754c30]" name="MusicGenres" duration-ms="4002" started-at="2013-10-22T18:38:04Z" description="Проверяет отображение жанров на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicGenres -->
+        <test-method status="PASS" signature="NovinkiGenres()[pri:0, instance:content.Genres@6c754c30]" name="NovinkiGenres" duration-ms="4387" started-at="2013-10-22T18:38:22Z" description="Проверяет отображение жанров на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NovinkiGenres -->
+      </class> <!-- content.Genres -->
+      <class name="user.Login">
+        <test-method status="FAIL" signature="LogIn()[pri:0, instance:user.Login@769cb63b]" name="LogIn" duration-ms="17497" started-at="2013-10-22T18:37:02Z" description="Testing login" finished-at="2013-10-22T18:37:20Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.04 seconds
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.04 seconds
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy7.clear(Unknown Source)
+	at pageFactory.MethodsPage.type(MethodsPage.java:16)
+	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
+	at user.Login.LogIn(Login.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7736)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10437)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:386)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+      </class> <!-- user.Login -->
+      <class name="content.Bloks">
+        <test-method status="PASS" signature="blocksOnMusic()[pri:0, instance:content.Bloks@5352f96c]" name="blocksOnMusic" duration-ms="3234" started-at="2013-10-22T18:38:19Z" description="Проверяет отображение блоков на &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blocksOnMusic -->
+        <test-method status="PASS" signature="blocksOnNovinki()[pri:0, instance:content.Bloks@5352f96c]" name="blocksOnNovinki" duration-ms="3624" started-at="2013-10-22T18:38:36Z" description="Проверяет отображение блоков на &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-22T18:38:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blocksOnNovinki -->
+        <test-method status="PASS" signature="CheckBlocks()[pri:0, instance:content.Bloks@5352f96c]" name="CheckBlocks" duration-ms="4630" started-at="2013-10-22T18:38:54Z" description="Проверяет отображение блоков на &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBlocks -->
       </class> <!-- content.Bloks -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="content.PlayMusicOnLand">
+        <test-method status="FAIL" signature="PlayMusic()[pri:0, instance:content.PlayMusicOnLand@6d541df4]" name="PlayMusic" duration-ms="44148" started-at="2013-10-22T18:37:20Z" description="Проверяет играет ли трек на странице лендинга" finished-at="2013-10-22T18:38:04Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:28)
+	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[На странице http://music.day.az/249300-orxan-masalli-sensizliye-oyresmemisem-2013-giyas не играет трек]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PlayMusic -->
+      </class> <!-- content.PlayMusicOnLand -->
+      <class name="content.Headers">
+        <test-method status="SKIP" signature="MusicHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="MusicHeader" duration-ms="1" depends-on-groups="Login" started-at="2013-10-22T18:39:10Z" description="Проверяем ссылки на шапке &lt;&lt;Музыка&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicHeader -->
+        <test-method status="SKIP" signature="NovinkiHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="NovinkiHeader" duration-ms="1" depends-on-groups="Login" started-at="2013-10-22T18:39:10Z" description="Проверяем ссылки на шапке &lt;&lt;Новинки&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NovinkiHeader -->
+        <test-method status="SKIP" signature="AzerHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="AzerHeader" duration-ms="0" depends-on-groups="Login" started-at="2013-10-22T18:39:10Z" description="Проверяем ссылки на шапке &lt;&lt;Азербайджанская&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AzerHeader -->
+        <test-method status="SKIP" signature="PlaylistHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="PlaylistHeader" duration-ms="0" depends-on-groups="Login" started-at="2013-10-22T18:39:10Z" description="Проверяем ссылки на шапке &lt;&lt;Мой плейлист&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaylistHeader -->
+        <test-method status="SKIP" signature="UploadHeader()[pri:0, instance:content.Headers@2d7ab63f]" name="UploadHeader" duration-ms="0" depends-on-groups="Login" started-at="2013-10-22T18:39:10Z" description="Проверяем ссылки на шапке &lt;&lt;Загрузить&gt;&gt;" finished-at="2013-10-22T18:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadHeader -->
+      </class> <!-- content.Headers -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

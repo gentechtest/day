@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="basic.Log"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="content.SocialLinks">
+        <methods>
+          <include name="socialOnPlaylist"/>
+          <include name="thearDown"/>
+          <include name="getWebDriver"/>
+        </methods>
+      </class> <!-- content.SocialLinks -->
+      <class name="content.PlayMusicOnLand">
+        <methods>
+          <include name="PlayMusic"/>
+        </methods>
+      </class> <!-- content.PlayMusicOnLand -->
+      <class name="content.Headers">
+        <methods>
+          <include name="UploadHeader"/>
+          <include name="MusicHeader"/>
+          <include name="NovinkiHeader"/>
+          <include name="PlaylistHeader"/>
+          <include name="AzerHeader"/>
+        </methods>
+      </class> <!-- content.Headers -->
+      <class name="user.Login">
+        <methods>
+          <include name="LogIn"/>
+        </methods>
+      </class> <!-- user.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

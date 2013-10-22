@@ -7,17 +7,17 @@ import org.testng.annotations.Test;
 import basic.BasicTestCase;
 
 public class Artists extends BasicTestCase {
-	@Test(priority=1, description="Проверяет отображение артистов на  <<Музыка>>")
+	@Test(priority=1, description="Проверяет отображение артистов на <<Музыка>>")
 	public void MusicArtists () throws Exception {
 	  driver.get(musicUrl);
 	  checkArtists(15);
 }
-	@Test(priority=2, description="Проверяет отображение артистов на  <<Новинки>>")
+	@Test(priority=2, description="Проверяет отображение артистов на <<Новинки>>")
 	public void NovinkiArtists () throws Exception {
 	  driver.get(novinkiUrl);
 	  checkArtists(7);
 }
-	@Test(priority=3, description="Проверяет отображение артистов на  <<Азербайджанская>>")
+	@Test(priority=3, description="Проверяет отображение артистов на <<Азербайджанская>>")
 	public void AzerArtists () throws Exception {
 	  driver.get(azerUrl);
 	  checkArtists(15);

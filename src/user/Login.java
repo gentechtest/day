@@ -10,7 +10,7 @@ import basic.BasicTestCase;
 public class Login extends BasicTestCase {
 	private LoginPage loginPage = PageFactory.initElements(getWebDriver(), LoginPage.class);
 	String  pageUrl ="http://music.day.az/";
-	@Test(priority=1, groups={"Login"}, description="Тестируем логин")
+	@Test(priority=1, groups={"Login"}, description="Testing login")
 	public void LogIn () throws Exception {
 	driver.get(pageUrl);
 	loginPage.loginAs(user);

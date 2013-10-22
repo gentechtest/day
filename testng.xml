@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
   <dependencies>
-  <group name="Header" depends-on="Login"></group>
+   <group name="Header" depends-on="Login"></group>
    <group name="SocialLinks" depends-on="Login"></group>
   </dependencies>
   <listeners>
@@ -11,13 +11,13 @@
   </listeners>
     <classes>
       <class name="user.Login"/>
+      <class name="content.PlayMusicOnLand"/>
       <class name="content.Headers"/>
-      <class name="content.SocialLinks"/>
-      <class name="content.Bloks"/>
-      <class name="content.BlockTitles"/>
       <class name="content.Genres"/>
+      <class name="content.BlockTitles"/>
+      <class name="content.SocialLinks"/>
       <class name="content.Artists"/>
-       <class name="content.Playmusic"/>
+      <class name="content.Bloks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

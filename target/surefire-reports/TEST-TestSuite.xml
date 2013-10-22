@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="247.582" tests="22" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="92.165" tests="22" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="NurKZ"/>
@@ -8,6 +8,7 @@
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="JENKINS_HOME" value="C:\Users\Voice\.jenkins"/>
+    <property name="PATH" value="C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd"/>
     <property name="HUDSON_SERVER_COOKIE" value="07e80270c3a9aed0"/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_25\jre\classes"/>
@@ -26,17 +27,18 @@
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="PROMPT" value="$P$G"/>
     <property name="user.language" value="ru"/>
-    <property name="BUILD_DISPLAY_NAME" value="#114"/>
+    <property name="BUILD_DISPLAY_NAME" value="#169"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Users\Voice\AppData\Local"/>
     <property name="java.version" value="1.7.0_25"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-Dfile.encoding=UTF8"/>
     <property name="PROCESSOR_LEVEL" value="6"/>
     <property name="user.timezone" value="Europe/Helsinki"/>
     <property name="USERNAME" value="Voice"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="2013-10-21_16-33-13"/>
+    <property name="BUILD_ID" value="2013-10-22_18-40-58"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -44,7 +46,6 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="HOMEDRIVE" value="C:"/>
     <property name="java.class.version" value="51.0"/>
-    <property name="=::" value="::\"/>
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="user.country" value="RU"/>
     <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
@@ -68,7 +69,7 @@
     <property name="user.script" value=""/>
     <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\Users\Voice"/>
-    <property name="BUILD_TAG" value="jenkins-NurKZ-114"/>
+    <property name="BUILD_TAG" value="jenkins-NurKZ-169"/>
     <property name="JENKINS_SERVER_COOKIE" value="07e80270c3a9aed0"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -82,8 +83,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files (x86)\Maven"/>
     <property name="java.class.path" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.4.jar;C:\Program Files (x86)\Maven\boot\plexus-classworlds-2.4.2.jar;C:\Program Files (x86)\Maven/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files (x86)\Maven C:\Users\Voice\.jenkins\war\WEB-INF\lib\remoting-2.32.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar 50534"/>
-    <property name="Path" value="C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files (x86)\Maven C:\Users\Voice\.jenkins\war\WEB-INF\lib\remoting-2.32.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar 60810"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.7.0_25/bin"/>
@@ -98,27 +98,27 @@
     <property name="HUDSON_HOME" value="C:\Users\Voice\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files (x86)\Maven/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/NurKZ/114/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/NurKZ/169/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="SystemRoot" value="C:\Windows"/>
     <property name="windows_tracing_flags" value="3"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="user.dir" value="C:\Music.day\md\Music.day"/>
+    <property name="user.dir" value="C:\workspace\Music.day"/>
     <property name="JOB_URL" value="http://localhost:8080/job/NurKZ/"/>
     <property name="LOGONSERVER" value="\\VOICE-ПК"/>
     <property name="USERDOMAIN" value="Voice-ПК"/>
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files (x86)\Maven"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="114"/>
+    <property name="BUILD_NUMBER" value="169"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="PROCESSOR_REVISION" value="2a07"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
     <property name="windir" value="C:\Windows"/>
-    <property name="=C:" value="C:\Jenkins"/>
-    <property name="file.encoding" value="Cp1251"/>
+    <property name="=C:" value="c:\Jenkins"/>
+    <property name="file.encoding" value="UTF8"/>
     <property name="SystemDrive" value="C:"/>
     <property name="maven3.interceptor" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar"/>
     <property name="WORKSPACE" value="C:\Users\Voice\.jenkins\workspace\NurKZ"/>
@@ -126,26 +126,26 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase name="LogIn" classname="user.Login" time="47.691"/>
-  <testcase name="socialOnMusic" classname="content.SocialLinks" time="8.437"/>
-  <testcase name="blocksOnMusic" classname="content.Bloks" time="7.945"/>
-  <testcase name="MusicTitles" classname="content.BlockTitles" time="7.642"/>
-  <testcase name="MusicGenres" classname="content.Genres" time="8.236"/>
-  <testcase name="MusicArtists" classname="content.Artists" time="8.418"/>
-  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="7.852"/>
-  <testcase name="blocksOnNovinki" classname="content.Bloks" time="8.161"/>
-  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="7.821"/>
-  <testcase name="NovinkiGenres" classname="content.Genres" time="8.725"/>
-  <testcase name="NovinkiArtists" classname="content.Artists" time="7.652"/>
-  <testcase name="socialOnAzer" classname="content.SocialLinks" time="8.051"/>
-  <testcase name="CheckBlocks" classname="content.Bloks" time="7.868"/>
-  <testcase name="AzerTitles" classname="content.BlockTitles" time="7.986"/>
-  <testcase name="AzerArtists" classname="content.Artists" time="8.454"/>
-  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="8.084"/>
-  <testcase name="PlayMusic" classname="content.Playmusic" time="18.994"/>
-  <testcase name="MusicHeader" classname="content.Headers" time="15.263"/>
-  <testcase name="NovinkiHeader" classname="content.Headers" time="11.479"/>
-  <testcase name="AzerHeader" classname="content.Headers" time="17.571"/>
-  <testcase name="PlaylistHeader" classname="content.Headers" time="10.508"/>
-  <testcase name="UploadHeader" classname="content.Headers" time="4.744"/>
+  <testcase name="LogIn" classname="user.Login" time="13.135"/>
+  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="8.261"/>
+  <testcase name="MusicGenres" classname="content.Genres" time="3.657"/>
+  <testcase name="MusicTitles" classname="content.BlockTitles" time="2.237"/>
+  <testcase name="socialOnMusic" classname="content.SocialLinks" time="2.381"/>
+  <testcase name="MusicArtists" classname="content.Artists" time="3.065"/>
+  <testcase name="blocksOnMusic" classname="content.Bloks" time="3.191"/>
+  <testcase name="NovinkiGenres" classname="content.Genres" time="7.135"/>
+  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="3.736"/>
+  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="3.529"/>
+  <testcase name="NovinkiArtists" classname="content.Artists" time="3.025"/>
+  <testcase name="blocksOnNovinki" classname="content.Bloks" time="2.496"/>
+  <testcase name="AzerTitles" classname="content.BlockTitles" time="2.45"/>
+  <testcase name="socialOnAzer" classname="content.SocialLinks" time="2.817"/>
+  <testcase name="AzerArtists" classname="content.Artists" time="2.906"/>
+  <testcase name="CheckBlocks" classname="content.Bloks" time="2.186"/>
+  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="2.339"/>
+  <testcase name="MusicHeader" classname="content.Headers" time="5.599"/>
+  <testcase name="NovinkiHeader" classname="content.Headers" time="5.06"/>
+  <testcase name="AzerHeader" classname="content.Headers" time="4.653"/>
+  <testcase name="PlaylistHeader" classname="content.Headers" time="4.515"/>
+  <testcase name="UploadHeader" classname="content.Headers" time="3.792"/>
 </testsuite>

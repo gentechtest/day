@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 import basic.BasicTestCase;
 
-public class Playmusic extends BasicTestCase {
+public class PlayMusicOnLand extends BasicTestCase {
 	 //Play music on a page
-	@Test(priority=7, description="ѕровер€ет играет ли трек на странице лендинга")
+	@Test(priority=1, description="ѕровер€ет играет ли трек на странице лендинга")
 	public void PlayMusic () throws Exception {
 		 driver.get(musicUrl);
 		 playMusic();

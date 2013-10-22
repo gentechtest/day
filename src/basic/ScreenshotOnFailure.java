@@ -21,7 +21,7 @@ public class ScreenshotOnFailure extends TestListenerAdapter {
      @Override
 	 public void onTestFailure(ITestResult result) {
 	  	WebDriver driver = BasicTestCase.getWebDriver(); //getting webdriver
-	  	System.out.println("Р”РµР»Р°РµРј СЃРєСЂРёРЅС€РѕС‚...");
+	  	System.out.println("Делаем скриншот...");
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //taking screenshot to temporary directory
 		String destDir = ("surefire-reports/html/fail-screenshots/"); //path of new directory of screenshot
 		new File(destDir).mkdirs(); //creating this directory
