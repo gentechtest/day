@@ -1,182 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="119.868" tests="22" errors="0" skipped="5" failures="3">
+<testsuite name="TestSuite" time="100.546" tests="22" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
-    <property name="java.vm.version" value="23.25-b01"/>
-    <property name="user.country.format" value="UA"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="RU"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\workspace\Music.day"/>
-    <property name="java.runtime.version" value="1.7.0_25-b17"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Voice\AppData\Local\Temp\"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5884281566293972371.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="51.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.1"/>
-    <property name="user.home" value="C:\Users\Voice"/>
-    <property name="user.timezone" value="Europe/Helsinki"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.7"/>
-    <property name="file.encoding" value="UTF8"/>
-    <property name="user.name" value="Voice"/>
-    <property name="java.class.path" value="/D:/Testing soft/eclipse-standard-kepler-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/bundles/360/1/.cp/jars/plexus-classworlds-2.4.jar"/>
-    <property name="java.vm.specification.version" value="1.7"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jre7"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="ru"/>
-    <property name="user.language.format" value="uk"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.7.0_25"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\workspace\Music.day\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="maven.bootclasspath" value="/D:/Testing soft/eclipse-standard-kepler-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/bundles/360/1/.cp/jars/plexus-classworlds-2.4.jar"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="JOB_NAME" value="NurKZ"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="C:\Users\Voice\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="07e80270c3a9aed0"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_25\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="user.country.format" value="UA"/>
     <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Users\Voice\AppData\Local\Temp"/>
+    <property name="java.runtime.version" value="1.7.0_25-b17"/>
+    <property name="user.name" value="Voice"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="user.language" value="ru"/>
+    <property name="BUILD_DISPLAY_NAME" value="#174"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Users\Voice\AppData\Local"/>
+    <property name="java.version" value="1.7.0_25"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-Dfile.encoding=UTF8"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="USERNAME" value="Voice"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="2013-10-23_11-20-47"/>
     <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="=::" value="::\"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="RU"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_25\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="6.1"/>
+    <property name="TMP" value="C:\Users\Voice\AppData\Local\Temp"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="23.25-b01"/>
+    <property name="user.variant" value=""/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.7.0_25"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="HOMEPATH" value="\Users\Voice"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="COMPUTERNAME" value="VOICE-ПК"/>
+    <property name="user.script" value=""/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="user.home" value="C:\Users\Voice"/>
+    <property name="BUILD_TAG" value="jenkins-NurKZ-174"/>
+    <property name="JENKINS_SERVER_COOKIE" value="07e80270c3a9aed0"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Users\Voice"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Maven/bin;C:\Program Files\Java\jdk1.7.0_25/bin;C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Users\Voice\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Program Files (x86)\Maven"/>
+    <property name="java.class.path" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.4.jar;C:\Program Files (x86)\Maven\boot\plexus-classworlds-2.4.2.jar;C:\Program Files (x86)\Maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files (x86)\Maven C:\Users\Voice\.jenkins\war\WEB-INF\lib\remoting-2.32.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar 53606"/>
+    <property name="Path" value="C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.7.0_25/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 42 Stepping 7, GenuineIntel"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Program Files (x86)\Maven"/>
+    <property name="java.io.tmpdir" value="C:\Users\Voice\AppData\Local\Temp\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Users\Voice\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Program Files (x86)\Maven/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/NurKZ/174/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="windows_tracing_flags" value="3"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\workspace\Music.day"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/NurKZ/"/>
+    <property name="LOGONSERVER" value="\\VOICE-ПК"/>
+    <property name="USERDOMAIN" value="Voice-ПК"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\Program Files (x86)\Maven"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="174"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="PROCESSOR_REVISION" value="2a07"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="=C:" value="c:\Jenkins"/>
+    <property name="file.encoding" value="UTF8"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar"/>
+    <property name="WORKSPACE" value="C:\Users\Voice\.jenkins\workspace\NurKZ"/>
+    <property name="maven3.interceptor.common" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase name="LogIn" classname="user.Login" time="16.44">
-    <failure message="Element is not currently visible and so may not be interacted with&#10;Command duration or timeout: 10.08 seconds&#10;Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;&#10;System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;&#10;Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.08 seconds
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
-	at com.sun.proxy.$Proxy6.clear(Unknown Source)
-	at pageFactory.MethodsPage.type(MethodsPage.java:16)
-	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
-	at user.Login.LogIn(Login.java:16)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8231)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10800)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10817)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
-]]></failure>
-    <system-out>----------------------------------------------
-Тестирует логин
-STARTED: Class = Login Method = LogIn
-</system-out>
-  </testcase>
-  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="39.991">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:28)
-	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:14)
-</failure>
-    <system-out>----------------------------------------------
-Проверяет играет ли трек на странице лендинга
-STARTED: Class = PlayMusicOnLand Method = PlayMusic
-На странице http://music.day.az/249954-makko-ft-xatun-soyle не играет трек
-</system-out>
-  </testcase>
-  <testcase name="MusicGenres" classname="content.Genres" time="5.136"/>
-  <testcase name="MusicTitles" classname="content.BlockTitles" time="3.372"/>
-  <testcase name="socialOnMusic" classname="content.SocialLinks" time="3.767"/>
-  <testcase name="MusicArtists" classname="content.Artists" time="3.615"/>
-  <testcase name="blocksOnMusic" classname="content.Bloks" time="3.174"/>
-  <testcase name="NovinkiGenres" classname="content.Genres" time="4.135"/>
-  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="3.338"/>
-  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="3.289"/>
-  <testcase name="NovinkiArtists" classname="content.Artists" time="3.609"/>
-  <testcase name="blocksOnNovinki" classname="content.Bloks" time="3.423"/>
-  <testcase name="AzerTitles" classname="content.BlockTitles" time="3.362"/>
-  <testcase name="socialOnAzer" classname="content.SocialLinks" time="3.721"/>
-  <testcase name="AzerArtists" classname="content.Artists" time="4.037"/>
-  <testcase name="CheckBlocks" classname="content.Bloks" time="3.61"/>
-  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="11.849">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}&#10;Command duration or timeout: 10.04 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;&#10;System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;&#10;Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
-Command duration or timeout: 10.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy6.isDisplayed(Unknown Source)
-	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
-	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8880)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
-]]></failure>
-    <system-out>----------------------------------------------
-Проверяем блок соцсетей на &lt;&lt;Мой плейлист&gt;&gt;
-STARTED: Class = SocialLinks Method = socialOnPlaylist
-</system-out>
-  </testcase>
-  <testcase name="MusicHeader" classname="content.Headers" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="NovinkiHeader" classname="content.Headers" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="AzerHeader" classname="content.Headers" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="PlaylistHeader" classname="content.Headers" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="UploadHeader" classname="content.Headers" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="LogIn" classname="user.Login" time="16.236"/>
+  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="8.628"/>
+  <testcase name="MusicGenres" classname="content.Genres" time="5.252"/>
+  <testcase name="MusicTitles" classname="content.BlockTitles" time="2.31"/>
+  <testcase name="socialOnMusic" classname="content.SocialLinks" time="2.703"/>
+  <testcase name="MusicArtists" classname="content.Artists" time="2.912"/>
+  <testcase name="blocksOnMusic" classname="content.Bloks" time="4.121"/>
+  <testcase name="NovinkiGenres" classname="content.Genres" time="7.443"/>
+  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="4.784"/>
+  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="3.492"/>
+  <testcase name="NovinkiArtists" classname="content.Artists" time="2.913"/>
+  <testcase name="blocksOnNovinki" classname="content.Bloks" time="2.255"/>
+  <testcase name="AzerTitles" classname="content.BlockTitles" time="2.641"/>
+  <testcase name="socialOnAzer" classname="content.SocialLinks" time="2.866"/>
+  <testcase name="AzerArtists" classname="content.Artists" time="2.841"/>
+  <testcase name="CheckBlocks" classname="content.Bloks" time="2.672"/>
+  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="2.496"/>
+  <testcase name="MusicHeader" classname="content.Headers" time="5.244"/>
+  <testcase name="NovinkiHeader" classname="content.Headers" time="4.803"/>
+  <testcase name="AzerHeader" classname="content.Headers" time="5.512"/>
+  <testcase name="PlaylistHeader" classname="content.Headers" time="4.616"/>
+  <testcase name="UploadHeader" classname="content.Headers" time="3.806"/>
 </testsuite>

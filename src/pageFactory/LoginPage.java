@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import data.UserData;
 
 public class LoginPage extends MethodsPage{
-	@FindBy (linkText = "�����") //link "exit"
+	@FindBy (linkText = "Выйти") //link "exit"
 	 public WebElement linkLogOut;
 
 	 @FindBy (linkText = "Войти") //link "enter"
