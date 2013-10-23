@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/3/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 22 18:37:02 EEST 2013</td>
+<td>Started on:</td><td>Wed Oct 23 11:28:03 EEST 2013</td>
 </tr>
-<tr><td>Total time:</td><td>128 seconds (128459 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22325 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,231 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='user.Login.LogIn()'><b>LogIn</b><br>Test class: user.Login<br>Test method: Testing login</td>
-<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.04 seconds
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at pageFactory.MethodsPage.type(MethodsPage.java:16)
-	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
-	at user.Login.LogIn(Login.java:16)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7736)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10437)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:386)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1841778983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1841778983'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.04 seconds
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at pageFactory.MethodsPage.type(MethodsPage.java:16)
-	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
-	at user.Login.LogIn(Login.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7736)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10437)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:386)
-</pre></div></td>
-<td>17</td>
-<td>user.Login@769cb63b</td></tr>
-<tr>
-<td title='content.PlayMusicOnLand.PlayMusic()'><b>PlayMusic</b><br>Test class: content.PlayMusicOnLand<br>Test method: Проверяет играет ли трек на странице лендинга<br/>
-<a href="#Output-1174746218" onClick='toggleBox("Output-1174746218", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1174746218" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1174746218">
-На странице http://music.day.az/249300-orxan-masalli-sensizliye-oyresmemisem-2013-giyas не играет трек<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException
-	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:28)
-	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:14)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174746218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1174746218'><pre>java.lang.NullPointerException
-	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:28)
-	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>44</td>
-<td>content.PlayMusicOnLand@6d541df4</td></tr>
-<tr>
-<td title='content.SocialLinks.socialOnPlaylist()'><b>socialOnPlaylist</b><br>Test class: content.SocialLinks<br>Test method: Проверяем блок соцсетей на <<Мой плейлист>></td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
-	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace487309781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace487309781'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: a6fd0163-420e-46cd-82d2-0ea4aed58c5b
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
-	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous6993314960584078482webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
-</pre></div></td>
-<td>11</td>
-<td>content.SocialLinks@2a789924</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -300,108 +75,20 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='content.Artists.AzerArtists()'><b>AzerArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Азербайджанская>></td>
+<td title='content.Artists.AzerArtists()'><b>AzerArtists</b><br>Test class: content.Artists<br>Test method: РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>></td>
 <td></td>
 <td>4</td>
-<td>content.Artists@2a801853</td></tr>
+<td>content.Artists@1ff52524</td></tr>
 <tr>
-<td title='content.BlockTitles.AzerTitles()'><b>AzerTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение блоков на  <<Азербайджанская>></td>
+<td title='content.Artists.MusicArtists()'><b>MusicArtists</b><br>Test class: content.Artists<br>Test method: РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РњСѓР·С‹РєР°>></td>
 <td></td>
-<td>5</td>
-<td>content.BlockTitles@70fc79cb</td></tr>
+<td>6</td>
+<td>content.Artists@1ff52524</td></tr>
 <tr>
-<td title='content.Bloks.CheckBlocks()'><b>CheckBlocks</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на <<Азербайджанская>></td>
-<td></td>
-<td>4</td>
-<td>content.Bloks@5352f96c</td></tr>
-<tr>
-<td title='content.Artists.MusicArtists()'><b>MusicArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Музыка>></td>
+<td title='content.Artists.NovinkiArtists()'><b>NovinkiArtists</b><br>Test class: content.Artists<br>Test method: РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РќРѕРІРёРЅРєРё>></td>
 <td></td>
 <td>3</td>
-<td>content.Artists@2a801853</td></tr>
-<tr>
-<td title='content.Genres.MusicGenres()'><b>MusicGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на <<Музыка>></td>
-<td></td>
-<td>4</td>
-<td>content.Genres@6c754c30</td></tr>
-<tr>
-<td title='content.BlockTitles.MusicTitles()'><b>MusicTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение имен блоков на <<Музыка>></td>
-<td></td>
-<td>3</td>
-<td>content.BlockTitles@70fc79cb</td></tr>
-<tr>
-<td title='content.Artists.NovinkiArtists()'><b>NovinkiArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Новинки>></td>
-<td></td>
-<td>2</td>
-<td>content.Artists@2a801853</td></tr>
-<tr>
-<td title='content.Genres.NovinkiGenres()'><b>NovinkiGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на <<Азербайджанская>></td>
-<td></td>
-<td>4</td>
-<td>content.Genres@6c754c30</td></tr>
-<tr>
-<td title='content.BlockTitles.NovinkiTitles()'><b>NovinkiTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение имен блоков на  <<Музыка>></td>
-<td></td>
-<td>3</td>
-<td>content.BlockTitles@70fc79cb</td></tr>
-<tr>
-<td title='content.Bloks.blocksOnMusic()'><b>blocksOnMusic</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на <<Музыка>></td>
-<td></td>
-<td>3</td>
-<td>content.Bloks@5352f96c</td></tr>
-<tr>
-<td title='content.Bloks.blocksOnNovinki()'><b>blocksOnNovinki</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на <<Новинки>></td>
-<td></td>
-<td>3</td>
-<td>content.Bloks@5352f96c</td></tr>
-<tr>
-<td title='content.SocialLinks.socialOnAzer()'><b>socialOnAzer</b><br>Test class: content.SocialLinks<br>Test method: Проверяем блок соцсетей на <<Азербайджанская>></td>
-<td></td>
-<td>3</td>
-<td>content.SocialLinks@2a789924</td></tr>
-<tr>
-<td title='content.SocialLinks.socialOnMusic()'><b>socialOnMusic</b><br>Test class: content.SocialLinks<br>Test method: Проверяем блок соцсетей на <<Музыка>></td>
-<td></td>
-<td>3</td>
-<td>content.SocialLinks@2a789924</td></tr>
-<tr>
-<td title='content.SocialLinks.socialOnNovinki()'><b>socialOnNovinki</b><br>Test class: content.SocialLinks<br>Test method: Проверяем блок соцсетей на <<Новинки>></td>
-<td></td>
-<td>3</td>
-<td>content.SocialLinks@2a789924</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='content.Headers.AzerHeader()'><b>AzerHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Азербайджанская>></td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='content.Headers.MusicHeader()'><b>MusicHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Музыка>></td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='content.Headers.NovinkiHeader()'><b>NovinkiHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Новинки>></td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='content.Headers.PlaylistHeader()'><b>PlaylistHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Мой плейлист>></td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
-<tr>
-<td title='content.Headers.UploadHeader()'><b>UploadHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Загрузить>></td>
-<td></td>
-<td>0</td>
-<td>null</td></tr>
+<td>content.Artists@1ff52524</td></tr>
 </table><p>
 </body>
 </html>

@@ -7,17 +7,17 @@ import org.testng.annotations.Test;
 import basic.BasicTestCase;
 
 public class Artists extends BasicTestCase {
-	@Test(priority=1, description="Проверяет отображение артистов на <<Музыка>>")
+	@Test(priority=1, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РњСѓР·С‹РєР°>>")
 	public void MusicArtists () throws Exception {
 	  driver.get(musicUrl);
 	  checkArtists(15);
 }
-	@Test(priority=2, description="Проверяет отображение артистов на <<Новинки>>")
+	@Test(priority=2, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РќРѕРІРёРЅРєРё>>")
 	public void NovinkiArtists () throws Exception {
 	  driver.get(novinkiUrl);
 	  checkArtists(7);
 }
-	@Test(priority=3, description="Проверяет отображение артистов на <<Азербайджанская>>")
+	@Test(priority=3, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р°СЂС‚РёСЃС‚РѕРІ РЅР° <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>")
 	public void AzerArtists () throws Exception {
 	  driver.get(azerUrl);
 	  checkArtists(15);
@@ -29,8 +29,8 @@ public class Artists extends BasicTestCase {
 	    driver.findElement(By.xpath("//*[@class='ordered-list']//li["+i+"]/h4/a")).isDisplayed();
 	     }
 	    if (expected_numb_artists != real_numb_artists) {
-	    	 System.out.println("На странице "+driver.getCurrentUrl()+" неотображаются исполнители");
-		     Reporter.log("На странице "+driver.getCurrentUrl()+" неотображаются исполнители");
+	    	 System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°СЋС‚СЃСЏ Р°СЂС‚РёСЃС‚С‹");
+		     Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°СЋС‚СЃСЏ Р°СЂС‚РёСЃС‚С‹");
 		     throw new NullPointerException ();
 	    }
 	} 

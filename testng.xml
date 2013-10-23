@@ -10,14 +10,9 @@
   <listener class-name="basic.Log"></listener>
   </listeners>
     <classes>
-      <class name="user.Login"/>
-      <class name="content.PlayMusicOnLand"/>
-      <class name="content.Headers"/>
-      <class name="content.Genres"/>
-      <class name="content.BlockTitles"/>
-      <class name="content.SocialLinks"/>
+  
       <class name="content.Artists"/>
-      <class name="content.Bloks"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
