@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="103.552" tests="22" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="119.868" tests="22" errors="0" skipped="5" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1786284423848892813.tmp"/>
+    <property name="classworlds.conf" value="C:\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5884281566293972371.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -37,7 +37,7 @@
     <property name="user.timezone" value="Europe/Helsinki"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
-    <property name="file.encoding" value="Cp1251"/>
+    <property name="file.encoding" value="UTF8"/>
     <property name="user.name" value="Voice"/>
     <property name="java.class.path" value="/D:/Testing soft/eclipse-standard-kepler-R-win32-x86_64/eclipse/configuration/org.eclipse.osgi/bundles/360/1/.cp/jars/plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.7"/>
@@ -62,26 +62,121 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="LogIn" classname="user.Login" time="26.128"/>
-  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="7.842"/>
-  <testcase name="MusicGenres" classname="content.Genres" time="2.972"/>
-  <testcase name="MusicTitles" classname="content.BlockTitles" time="2.279"/>
-  <testcase name="socialOnMusic" classname="content.SocialLinks" time="2.366"/>
-  <testcase name="MusicArtists" classname="content.Artists" time="2.886"/>
-  <testcase name="blocksOnMusic" classname="content.Bloks" time="4.366"/>
-  <testcase name="NovinkiGenres" classname="content.Genres" time="3.498"/>
-  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="2.649"/>
-  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="2.457"/>
-  <testcase name="NovinkiArtists" classname="content.Artists" time="4.557"/>
-  <testcase name="blocksOnNovinki" classname="content.Bloks" time="2.272"/>
-  <testcase name="AzerTitles" classname="content.BlockTitles" time="2.381"/>
-  <testcase name="socialOnAzer" classname="content.SocialLinks" time="2.59"/>
-  <testcase name="AzerArtists" classname="content.Artists" time="2.708"/>
-  <testcase name="CheckBlocks" classname="content.Bloks" time="2.342"/>
-  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="2.115"/>
-  <testcase name="MusicHeader" classname="content.Headers" time="4.489"/>
-  <testcase name="NovinkiHeader" classname="content.Headers" time="4.759"/>
-  <testcase name="AzerHeader" classname="content.Headers" time="5.059"/>
-  <testcase name="PlaylistHeader" classname="content.Headers" time="9.053"/>
-  <testcase name="UploadHeader" classname="content.Headers" time="3.784"/>
+  <testcase name="LogIn" classname="user.Login" time="16.44">
+    <failure message="Element is not currently visible and so may not be interacted with&#10;Command duration or timeout: 10.08 seconds&#10;Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;&#10;System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;&#10;Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.08 seconds
+Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at pageFactory.MethodsPage.type(MethodsPage.java:16)
+	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
+	at user.Login.LogIn(Login.java:16)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8231)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10800)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10817)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
+]]></failure>
+    <system-out>----------------------------------------------
+Тестирует логин
+STARTED: Class = Login Method = LogIn
+</system-out>
+  </testcase>
+  <testcase name="PlayMusic" classname="content.PlayMusicOnLand" time="39.991">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:28)
+	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:14)
+</failure>
+    <system-out>----------------------------------------------
+Проверяет играет ли трек на странице лендинга
+STARTED: Class = PlayMusicOnLand Method = PlayMusic
+На странице http://music.day.az/249954-makko-ft-xatun-soyle не играет трек
+</system-out>
+  </testcase>
+  <testcase name="MusicGenres" classname="content.Genres" time="5.136"/>
+  <testcase name="MusicTitles" classname="content.BlockTitles" time="3.372"/>
+  <testcase name="socialOnMusic" classname="content.SocialLinks" time="3.767"/>
+  <testcase name="MusicArtists" classname="content.Artists" time="3.615"/>
+  <testcase name="blocksOnMusic" classname="content.Bloks" time="3.174"/>
+  <testcase name="NovinkiGenres" classname="content.Genres" time="4.135"/>
+  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="3.338"/>
+  <testcase name="socialOnNovinki" classname="content.SocialLinks" time="3.289"/>
+  <testcase name="NovinkiArtists" classname="content.Artists" time="3.609"/>
+  <testcase name="blocksOnNovinki" classname="content.Bloks" time="3.423"/>
+  <testcase name="AzerTitles" classname="content.BlockTitles" time="3.362"/>
+  <testcase name="socialOnAzer" classname="content.SocialLinks" time="3.721"/>
+  <testcase name="AzerArtists" classname="content.Artists" time="4.037"/>
+  <testcase name="CheckBlocks" classname="content.Bloks" time="3.61"/>
+  <testcase name="socialOnPlaylist" classname="content.SocialLinks" time="11.849">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}&#10;Command duration or timeout: 10.04 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;&#10;System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;&#10;Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: 8fbfd8c0-4cfb-4dc7-93a7-84183221c55f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy6.isDisplayed(Unknown Source)
+	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
+	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//*[@class='pluso-wrap']/a[1]"}
+Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8880)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5041868579741708488webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
+]]></failure>
+    <system-out>----------------------------------------------
+Проверяем блок соцсетей на &lt;&lt;Мой плейлист&gt;&gt;
+STARTED: Class = SocialLinks Method = socialOnPlaylist
+</system-out>
+  </testcase>
+  <testcase name="MusicHeader" classname="content.Headers" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="NovinkiHeader" classname="content.Headers" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="AzerHeader" classname="content.Headers" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="PlaylistHeader" classname="content.Headers" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UploadHeader" classname="content.Headers" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
