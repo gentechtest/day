@@ -24,7 +24,7 @@ public class BasicTestCase {
 	 @BeforeTest
 	 protected static WebDriver getWebDriver() {
 	  if (driver == null) {
-	   System.setProperty("webdriver.chrome.driver", "C:/chroomedriver.exe");
+	   System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 	   driver = new ChromeDriver();
 	  //driver = new FirefoxDriver();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
