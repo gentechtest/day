@@ -11,91 +11,91 @@ import basic.BasicTestCase;
 
 public class Bloks extends BasicTestCase {
 
-		@Test(priority=1, description="Проверяет отображение блоков на <<Музыка>>")
+		@Test(priority=1, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєРѕРІ РЅР°  <<РњСѓР·С‹РєР°>>")
 		public void blocksOnMusic () throws Exception {
 			  driver.get(musicUrl);
 			  	try{
 			  		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][1]")).isDisplayed();//block top 10 tracks of the week
 		  		}
 				  catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается , блок <<Топ 10 треков за неделю>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Топ 10 треков за неделю>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-10 С‚СЂРµРєРѕРІ Р·Р° РЅРµРґРµР»СЋ>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-10 С‚СЂРµРєРѕРІ Р·Р° РЅРµРґРµР»СЋ>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			  	try{
 			  		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][2]")).isDisplayed();//block pop genres
 			  	}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается , блок <<Популярные жанры>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Популярные жанры>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РџРѕРїСѓР»СЏСЂРЅС‹Рµ Р¶Р°РЅСЂС‹>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РџРѕРїСѓР»СЏСЂРЅС‹Рµ Р¶Р°РЅСЂС‹>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			  	try {
 			  		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section']")).isDisplayed();//block top artists
 			  	}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается , блок <<Топ артисты>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Топ артисты>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-Р°СЂС‚РёСЃС‚С‹>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-Р°СЂС‚РёСЃС‚С‹>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 		}
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 		 //Check blocks
-		 @Test(priority=2, description="Проверяет отображение блоков на <<Новинки>>")
+		 @Test(priority=2, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕРѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєРѕРІ РЅР° <<РќРѕРІРёРЅРєРё>>")
 		 public void blocksOnNovinki () throws Exception {
 			 driver.get(novinkiUrl);
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section'][1]")).isDisplayed(); //block new pop artists
 			 	}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Новые популярные артисты>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новые популярные артисты>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ РїРѕРїСѓР»СЏСЂРЅС‹Рµ Р°СЂС‚РёСЃС‚С‹>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ РїРѕРїСѓР»СЏСЂРЅС‹Рµ Р°СЂС‚РёСЃС‚С‹>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section'][2]")).isDisplayed(); // block new albums
 			 	}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается  блок <<Новые альбомы>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новые альбомы>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ Р°Р»СЊР±РѕРјС‹>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ Р°Р»СЊР±РѕРјС‹>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][1]")).isDisplayed(); // block new tracks
 			 	}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Новые треки>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новые треки>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ С‚СЂРµРєРё>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РќРѕРІС‹Рµ С‚СЂРµРєРё>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 }
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 		//Check blocks on a page
-		 @Test(priority=3, description="Проверяет отображение блоков на <<Азербайджанская>>")
+		 @Test(priority=3, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєРѕРІ РЅР°  <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>")
 		 public void CheckBlocks () throws Exception {
 			 driver.get(azerUrl);
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][1]")).isDisplayed();//block top 10 tracks of the week
 				}
 			  	 catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<ТОП 10 Азербайджанских треков за неделю>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<ТОП 10 Азербайджанских треков за неделю>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-10 С‚СЂРµРєРѕРІ Р·Р° РЅРµРґРµР»СЋ>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-10 С‚СЂРµРєРѕРІ Р·Р° РЅРµРґРµР»СЋ>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='maincontent']//*[@class='section'][2]")).isDisplayed();//block pop genres
 			 	}
 			 		catch (NoSuchElementException e) {
-					    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Популярные жанры>>");
-				    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Популярные жанры>>");
+					    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РџРѕРїСѓР»СЏСЂРЅС‹Рµ Р¶Р°РЅСЂС‹>>");
+				    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РџРѕРїСѓР»СЏСЂРЅС‹Рµ Р¶Р°РЅСЂС‹>>");
 				  		throw new NoSuchElementException ("");
 				  		}
 			 	try{
 			 		driver.findElement(By.xpath("//*[@class='aside']//*[@class='section']")).isDisplayed();//block top artists
 			 		}
 			 	catch (NoSuchElementException e) {
-				    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается блок <<Топ артисты азербайджана>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Топ артисты азербайджана>>");
+				    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-РёСЃРїРѕР»РЅРёС‚РµР»Рё>>");
+			    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ Р±Р»РѕРє <<РўРѕРї-РёСЃРїРѕР»РЅРёС‚РµР»Рё>>");
 			  		throw new NoSuchElementException ("");
 			  		}
 			

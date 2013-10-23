@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 import basic.BasicTestCase;
 
 public class Genres extends BasicTestCase {
-	@Test(priority=1, description="Проверяет отображение жанров на <<Музыка>>")
+	@Test(priority=1, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р¶Р°РЅСЂРѕРІ РЅР°  <<РњСѓР·С‹РєР°>>")
 	public void MusicGenres () throws Exception {
 	driver.get(musicUrl);
 	checkGenres(24);
 	}
-	@Test(priority=2, description="Проверяет отображение жанров на <<Азербайджанская>>")
-	public void NovinkiGenres () throws Exception {
+	@Test(priority=2, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р¶Р°РЅСЂРѕРІ РЅР° <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>")
+	public void AzerGenres () throws Exception {
 	driver.get(azerUrl);
 	checkGenres(25);
 	}
@@ -26,8 +26,8 @@ public void checkGenres (int expected_numb_genres) throws Exception {
   driver.findElement(By.xpath (".//*[@class='popular-genres']/li["+i+"]")).isDisplayed();
  }
  if (expected_numb_genres !=real_numb_genres) {
-  System.out.println("На странице "+driver.getCurrentUrl()+" неотображаються жанры");
-  Reporter.log("На странице "+driver.getCurrentUrl()+" неотображаются жанры");
+  System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°СЋС‚СЃСЏ Р¶Р°РЅСЂС‹");
+  Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°СЋС‚СЃСЏ Р¶Р°РЅСЂС‹");
   throw new NullPointerException();
  }
 }

@@ -10,9 +10,11 @@
   <listener class-name="basic.Log"></listener>
   </listeners>
     <classes>
-  
+      <class name="user.Login"/>
+      <class name="content.Genres"/>
+      <class name="content.BlockTitles"/>
       <class name="content.Artists"/>
-     
+      <class name="content.Bloks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

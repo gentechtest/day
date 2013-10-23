@@ -12,282 +12,282 @@ import basic.BasicTestCase;
 public class Headers extends BasicTestCase { 
 private ContentPage element = PageFactory.initElements(getWebDriver(), ContentPage.class);
 	
-	@Test(priority = 1,groups={"Header"}, description="Проверяем ссылки на шапке <<Музыка>>")
+	@Test(priority = 1,groups={"Header"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ СЃСЃС‹Р»РѕРє РЅР° С€Р°РїРєРµ <<РњСѓР·С‹РєР°>>")
 	public void MusicHeader () throws Exception {
 		driver.get(musicUrl);
 		//music
 		try {
 		element.Music.click();
-	    assertEquals("МУЗЫКА",element.Music.getText());
+	    assertEquals("РњРЈР—Р«РљРђ",element.Music.getText());
 		}
 	    catch (AssertionError e) { 
-	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+	    	System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РњСѓР·С‹РєР°>>");
+	    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РњСѓР·С‹РєР°>>");
 	    	throw new AssertionError ();
 	    }
 	    //new music
 		try {
 	    element.NewMusic.isDisplayed();
-	    assertEquals("Новинки",element.NewMusic.getText());
+	    assertEquals("РќРѕРІРёРЅРєРё",element.NewMusic.getText());
 		}
 		catch (AssertionError e) { 
-		    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+		    System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РќРѕРІРёРЅРєРё>>");
+		    Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РќРѕРІРёРЅРєРё>>");
 		    throw new AssertionError ();
 		}
 	    //azer music
 		try {
 	    element.Azerbaijanskaya.isDisplayed();
-	    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+	    assertEquals("РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ",element.Azerbaijanskaya.getText());
 		}
 		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+		    	System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>");
+		    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>");
 		    	throw new AssertionError ();
 		    }
 	    //my play list
 		try {
 	    element.PlayList.isDisplayed();
-	    assertEquals("Мой плейлист",element.PlayList.getText());
+	    assertEquals("РњРѕР№ РїР»РµР№Р»РёСЃС‚",element.PlayList.getText());
 		}
 		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+		    	System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РњРѕР№ РїР»РµР№Р»РёСЃС‚>>");
+		    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<РњРѕР№ РїР»РµР№Р»РёСЃС‚>>");
 		    	throw new AssertionError ();
 		    }
 		//upload
 		try {
 	    element.Upload.isDisplayed();
-	    assertEquals("Загрузить",element.Upload.getText());
+	    assertEquals("Р—Р°РіСЂСѓР·РёС‚СЊ",element.Upload.getText());
 		}
 		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+		    	System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<Р—Р°РіСЂСѓР·РёС‚СЊ>>");
+		    	Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµРѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ СЃСЃС‹Р»РєР° <<Р—Р°РіСЂСѓР·РёС‚СЊ>>");
 		    	throw new AssertionError ();
 		    }
 	}
 	/*------------------------------------------------------------------------------------------------------------------------*/
 		
-		@Test(priority = 2, groups={"Header"}, description="Проверяем ссылки на шапке <<Новинки>>")
+		@Test(priority = 2, groups={"Header"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ СЃСЃС‹Р»РѕРє РЅР° С€Р°РїРєРµ <<РќРѕРІРёРЅРєРё>>")
 		public void NovinkiHeader () throws Exception {
 			driver.get(novinkiUrl);
 			//new music
 			try {
 		    element.NewMusic.click();
-		    assertEquals("Новинки",element.NewMusic.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.NewMusic.getText());
 			}
 			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    throw new AssertionError ();
 			}
 			//music
 			try {
 			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅ",element.Music.getText());
 			}
 		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
+		    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
 		    	throw new AssertionError ();
 		    }
 		    
 		    //azer music
 			try {
 		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Azerbaijanskaya.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 		    //my play list
 			try {
 		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
+		    assertEquals("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.PlayList.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//upload
 			try {
 		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Upload.getText()); 
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 	}
 		/*-------------------------------------------------------------------------------------------------------------------*/
 
-		@Test(priority = 3, groups={"Header"}, description="Проверяем ссылки на шапке <<Азербайджанская>>")
+		@Test(priority = 3, groups={"Header"}, description="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>")
 		public void AzerHeader () throws Exception {
 			driver.get(azerUrl);
 		    //azer music
 			try {
 		    element.Azerbaijanskaya.click();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Azerbaijanskaya.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//new music
 			try {
 		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.NewMusic.getText());
 			}
 			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    throw new AssertionError ();
 			}
 			//music
 			try {
 			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅ",element.Music.getText());
 			}
 		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
+		    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
 		    	throw new AssertionError ();
 		    }
 		    //my play list
 			try {
 		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
+		    assertEquals("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.PlayList.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//upload
 			try {
 		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Upload.getText()); 
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 	}
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 		
-		@Test(priority = 4, groups={"Header"}, description="Проверяем ссылки на шапке <<Мой плейлист>>")
+		@Test(priority = 4, groups={"Header"}, description="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>")
 		public void PlaylistHeader () throws Exception {
 			driver.get(playlistUrl);
 			//my play list
 			try {
 		    element.PlayList.click();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
+		    assertEquals("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.PlayList.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 		    //azer music
 			try {
 		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Azerbaijanskaya.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//new music
 			try {
 		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.NewMusic.getText());
 			}
 			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    throw new AssertionError ();
 			}
 			//music
 			try {
 			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅ",element.Music.getText());
 			}
 		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
+		    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
 		    	throw new AssertionError ();
 		    }
 			//upload
 			try {
 		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Upload.getText()); 
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 	}
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
-		@Test(priority = 4, groups={"Header"}, description="Проверяем ссылки на шапке <<Загрузить>>")
+		@Test(priority = 4, groups={"Header"}, description="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>")
 		public void UploadHeader () throws Exception {
 			driver.get(playlistUrl);
 			//upload
 			try {
 		    element.Upload.click();
-		    assertEquals("Загрузить",element.Upload.getText()); 
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Upload.getText()); 
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//my play list
 			try {
 		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
+		    assertEquals("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.PlayList.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 		    //kazahs music
 			try {
 		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.Azerbaijanskaya.getText());
 			}
 			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+			    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    	throw new AssertionError ();
 			    }
 			//new music
 			try {
 		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",element.NewMusic.getText());
 			}
 			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
+			    Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅпїЅ>>");
 			    throw new AssertionError ();
 			}
 			//music
 			try {
 			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
+		    assertEquals("пїЅпїЅпїЅпїЅпїЅпїЅ",element.Music.getText());
 			}
 		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
+		    	Reporter.log("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+driver.getCurrentUrl()+" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ <<пїЅпїЅпїЅпїЅпїЅпїЅ>>");
 		    	throw new AssertionError ();
 		    }
 	}
