@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="104.464" tests="3" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="60.964" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="NurKZ"/>
@@ -26,7 +26,7 @@
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="PROMPT" value="$P$G"/>
     <property name="user.language" value="ru"/>
-    <property name="BUILD_DISPLAY_NAME" value="#178"/>
+    <property name="BUILD_DISPLAY_NAME" value="#180"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Users\Voice\AppData\Local"/>
     <property name="java.version" value="1.7.0_25"/>
@@ -37,7 +37,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_25\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="2013-10-23_12-20-47"/>
+    <property name="BUILD_ID" value="2013-10-23_12-40-47"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -69,7 +69,7 @@
     <property name="user.script" value=""/>
     <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\Users\Voice"/>
-    <property name="BUILD_TAG" value="jenkins-NurKZ-178"/>
+    <property name="BUILD_TAG" value="jenkins-NurKZ-180"/>
     <property name="JENKINS_SERVER_COOKIE" value="07e80270c3a9aed0"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -83,7 +83,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files (x86)\Maven"/>
     <property name="java.class.path" value="C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.4.jar;C:\Program Files (x86)\Maven\boot\plexus-classworlds-2.4.2.jar;C:\Program Files (x86)\Maven/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files (x86)\Maven C:\Users\Voice\.jenkins\war\WEB-INF\lib\remoting-2.32.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar 56198"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files (x86)\Maven C:\Users\Voice\.jenkins\war\WEB-INF\lib\remoting-2.32.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.4.jar C:\Users\Voice\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.4.jar 57691"/>
     <property name="Path" value="C:\Users\Voice\AppData\Local\Google\Chrome\Application;C:\Windows\System32;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Maven\bin;C:\Program Files (x86)\Git\cmd"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
@@ -99,7 +99,7 @@
     <property name="HUDSON_HOME" value="C:\Users\Voice\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files (x86)\Maven/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/NurKZ/178/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/NurKZ/180/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
@@ -113,7 +113,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files (x86)\Maven"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="178"/>
+    <property name="BUILD_NUMBER" value="180"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="PROCESSOR_REVISION" value="2a07"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
@@ -127,37 +127,16 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase name="MusicArtists" classname="content.Artists" time="11.049"/>
-  <testcase name="NovinkiArtists" classname="content.Artists" time="3.357"/>
-  <testcase name="AzerArtists" classname="content.Artists" time="90.058">
-    <failure message="Timed out waiting for page load.&#10;Command duration or timeout: 90.02 seconds&#10;Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;&#10;System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;&#10;Session ID: 081c674f-624d-4a1b-9a5c-5a995b9f88ba&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Command duration or timeout: 90.02 seconds
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Session ID: 081c674f-624d-4a1b-9a5c-5a995b9f88ba
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at content.Artists.AzerArtists(Artists.java:22)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Timed out waiting for page load.
-Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.get/<(file:///C:/Users/Voice/AppData/Local/Temp/anonymous949218500236582619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8748)
-	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/Voice/AppData/Local/Temp/anonymous949218500236582619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:3330)
-	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/Voice/AppData/Local/Temp/anonymous949218500236582619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:3337)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous949218500236582619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
-]]></failure>
-    <system-out>----------------------------------------------
-Проверяет отображение артистов на &lt;&lt;Азербайджанская&gt;&gt;
-STARTED: Class = Artists Method = AzerArtists
-</system-out>
-  </testcase>
+  <testcase name="LogIn" classname="user.Login" time="13.257"/>
+  <testcase name="MusicGenres" classname="content.Genres" time="18.319"/>
+  <testcase name="MusicTitles" classname="content.BlockTitles" time="2.332"/>
+  <testcase name="MusicArtists" classname="content.Artists" time="2.741"/>
+  <testcase name="blocksOnMusic" classname="content.Bloks" time="2.302"/>
+  <testcase name="AzerGenres" classname="content.Genres" time="3.286"/>
+  <testcase name="NovinkiTitles" classname="content.BlockTitles" time="2.487"/>
+  <testcase name="NovinkiArtists" classname="content.Artists" time="2.67"/>
+  <testcase name="blocksOnNovinki" classname="content.Bloks" time="2.253"/>
+  <testcase name="AzerTitles" classname="content.BlockTitles" time="5.803"/>
+  <testcase name="AzerArtists" classname="content.Artists" time="2.864"/>
+  <testcase name="CheckBlocks" classname="content.Bloks" time="2.65"/>
 </testsuite>

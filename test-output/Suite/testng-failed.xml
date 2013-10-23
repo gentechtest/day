@@ -6,32 +6,13 @@
   </listeners>
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="content.SocialLinks">
+      <class name="content.Genres">
         <methods>
-          <include name="socialOnPlaylist"/>
+          <include name="MusicGenres"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- content.SocialLinks -->
-      <class name="content.PlayMusicOnLand">
-        <methods>
-          <include name="PlayMusic"/>
-        </methods>
-      </class> <!-- content.PlayMusicOnLand -->
-      <class name="content.Headers">
-        <methods>
-          <include name="UploadHeader"/>
-          <include name="MusicHeader"/>
-          <include name="NovinkiHeader"/>
-          <include name="PlaylistHeader"/>
-          <include name="AzerHeader"/>
-        </methods>
-      </class> <!-- content.Headers -->
-      <class name="user.Login">
-        <methods>
-          <include name="LogIn"/>
-        </methods>
-      </class> <!-- user.Login -->
+      </class> <!-- content.Genres -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

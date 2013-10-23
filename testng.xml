@@ -11,6 +11,7 @@
   </listeners>
     <classes>
       <class name="user.Login"/>
+      <class name="content.Headers"/>
       <class name="content.Genres"/>
       <class name="content.BlockTitles"/>
       <class name="content.Artists"/>
