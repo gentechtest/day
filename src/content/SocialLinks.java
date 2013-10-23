@@ -9,25 +9,25 @@ import basic.BasicTestCase;
 public class SocialLinks extends BasicTestCase {
 	private SocialLinkPage function = PageFactory.initElements(getWebDriver(), SocialLinkPage.class);
 
-	 @Test(priority=1,groups={"Soclinks"}, description="Проверяем блок соцсетей на <<Музыка>>")
+	 @Test(priority=1,groups={"Soclinks"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєР° СЃРѕС† СЃРµС‚РµР№ РЅР°  <<РњСѓР·С‹РєР°>>")
 	 public void socialOnMusic () throws Exception {
 		 driver.get(musicUrl);
 		 function.checkSocialLinks();
 	 	}
 /*----------------------------------------------------------------------------------------------------*/
-	 @Test(priority=2,groups={"Soclinks"}, description="Проверяем блок соцсетей на <<Новинки>>")
+	 @Test(priority=2,groups={"Soclinks"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєР° СЃРѕС† СЃРµС‚РµР№ РЅР°  <<РќРѕРІРёРЅРєРё>>")
 	 public void socialOnNovinki () throws Exception {
 		 driver.get(novinkiUrl);
 		 function.checkSocialLinks();
 		 }
 /*-----------------------------------------------------------------------------------------------------*/
-	 @Test(priority=3,groups={"Soclinks"}, description="Проверяем блок соцсетей на <<Азербайджанская>>")
+	 @Test(priority=3,groups={"Soclinks"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєР° СЃРѕС† СЃРµС‚РµР№ РЅР°  <<РђР·РµСЂР±Р°Р№РґР¶Р°РЅСЃРєР°СЏ>>")
 	 public void socialOnAzer () throws Exception {
 		 driver.get(azerUrl);
 		 function.checkSocialLinks();
 }
 /*------------------------------------------------------------------------------------------------------*/
-	 @Test(priority=4,groups={"Soclinks"}, description="Проверяем блок соцсетей на <<Мой плейлист>>")
+	 @Test(priority=4,groups={"Soclinks"}, description="РџСЂРѕРІРµСЂСЏРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р±Р»РѕРєР° СЃРѕС† СЃРµС‚РµР№ РЅР°  <<РњРѕР№ РїР»РµР№Р»РёСЃС‚>>")
 	 public void socialOnPlaylist () throws Exception {
 		 driver.get(playlistUrl);
 		 function.checkSocialLinks();

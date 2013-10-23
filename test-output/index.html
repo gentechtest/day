@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Genres" hash-for-method="MusicGenres">MusicGenres</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">22 methods,   22 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -150,6 +136,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Genres" hash-for-method="MusicGenres">MusicGenres</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Headers" hash-for-method="MusicHeader">MusicHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -175,6 +166,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.PlayMusicOnLand" hash-for-method="PlayMusic">PlayMusic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Headers" hash-for-method="PlaylistHeader">PlaylistHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -193,6 +189,26 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.Bloks" hash-for-method="blocksOnNovinki">blocksOnNovinki</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.SocialLinks" hash-for-method="socialOnAzer">socialOnAzer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.SocialLinks" hash-for-method="socialOnMusic">socialOnMusic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.SocialLinks" hash-for-method="socialOnNovinki">socialOnNovinki</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="content.SocialLinks" hash-for-method="socialOnPlaylist">socialOnPlaylist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -205,58 +221,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">content.Genres</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MusicGenres">
-                  </a> <!-- MusicGenres -->
-                  <span class="method-name">MusicGenres</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Command duration or timeout: 90.02 seconds
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: ee83c660-a63c-4204-af64-9dd12687b619
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at content.Genres.MusicGenres(Genres.java:12)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Timed out waiting for page load.
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.get/&lt;(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5756702595974929077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8312)
-	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5756702595974929077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:3263)
-	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5756702595974929077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:3270)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous5756702595974929077webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Проверяет отображение жанров на  <<Музыка>>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">content.Genres</span>
+              <span class="class-name">content.Artists</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AzerGenres">
-                  </a> <!-- AzerGenres -->
-                  <span class="method-name">AzerGenres</span>
+                  <a name="AzerArtists">
+                  </a> <!-- AzerArtists -->
+                  <span class="method-name">AzerArtists</span>
                   <em>
-(Проверяет отображение жанров на <<Азербайджанская>>)                  </em>
+(Проверяет отображение артистов на <<Азербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MusicArtists">
+                  </a> <!-- MusicArtists -->
+                  <span class="method-name">MusicArtists</span>
+                  <em>
+(Проверяет отображение артистов на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NovinkiArtists">
+                  </a> <!-- NovinkiArtists -->
+                  <span class="method-name">NovinkiArtists</span>
+                  <em>
+(Проверяет отображение артистов на <<Новинки>>)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,34 +259,16 @@ Driver info: driver.version: unknown
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">content.BlockTitles</span>
+              <span class="class-name">content.PlayMusicOnLand</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AzerTitles">
-                  </a> <!-- AzerTitles -->
-                  <span class="method-name">AzerTitles</span>
+                  <a name="PlayMusic">
+                  </a> <!-- PlayMusic -->
+                  <span class="method-name">PlayMusic</span>
                   <em>
-(Проверяет отображение имен блоков на  <<Азербайджанская>>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="MusicTitles">
-                  </a> <!-- MusicTitles -->
-                  <span class="method-name">MusicTitles</span>
-                  <em>
-(Проверяет отображение имени блока на <<Музыка>>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="NovinkiTitles">
-                  </a> <!-- NovinkiTitles -->
-                  <span class="method-name">NovinkiTitles</span>
-                  <em>
-(Проверяет отображение имен блоков на  <<Новинки>>)                  </em>
+(Проверяет играет ли трек на странице скачки)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -352,34 +329,25 @@ Driver info: driver.version: unknown
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">content.Artists</span>
+              <span class="class-name">content.Genres</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AzerArtists">
-                  </a> <!-- AzerArtists -->
-                  <span class="method-name">AzerArtists</span>
+                  <a name="AzerGenres">
+                  </a> <!-- AzerGenres -->
+                  <span class="method-name">AzerGenres</span>
                   <em>
-(Проверяет отображение артистов на <<Азербайджанская>>)                  </em>
+(Проверяет отображение жанров на <<Азербайджанская>>)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="MusicArtists">
-                  </a> <!-- MusicArtists -->
-                  <span class="method-name">MusicArtists</span>
+                  <a name="MusicGenres">
+                  </a> <!-- MusicGenres -->
+                  <span class="method-name">MusicGenres</span>
                   <em>
-(Проверяет отображение артистов на <<Музыка>>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="NovinkiArtists">
-                  </a> <!-- NovinkiArtists -->
-                  <span class="method-name">NovinkiArtists</span>
-                  <em>
-(Проверяет отображение артистов на <<Новинки>>)                  </em>
+(Проверяет отображение жанров на  <<Музыка>>)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -436,6 +404,85 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.SocialLinks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="socialOnAzer">
+                  </a> <!-- socialOnAzer -->
+                  <span class="method-name">socialOnAzer</span>
+                  <em>
+(Проверяет отображение блока соц сетей на  <<Азербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="socialOnMusic">
+                  </a> <!-- socialOnMusic -->
+                  <span class="method-name">socialOnMusic</span>
+                  <em>
+(Проверяет отображение блока соц сетей на  <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="socialOnNovinki">
+                  </a> <!-- socialOnNovinki -->
+                  <span class="method-name">socialOnNovinki</span>
+                  <em>
+(Проверяет отображение блока соц сетей на  <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="socialOnPlaylist">
+                  </a> <!-- socialOnPlaylist -->
+                  <span class="method-name">socialOnPlaylist</span>
+                  <em>
+(Проверяет отображение блока соц сетей на  <<Мой плейлист>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">content.BlockTitles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AzerTitles">
+                  </a> <!-- AzerTitles -->
+                  <span class="method-name">AzerTitles</span>
+                  <em>
+(Проверяет отображение имен блоков на  <<Азербайджанская>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MusicTitles">
+                  </a> <!-- MusicTitles -->
+                  <span class="method-name">MusicTitles</span>
+                  <em>
+(Проверяет отображение имени блока на <<Музыка>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NovinkiTitles">
+                  </a> <!-- NovinkiTitles -->
+                  <span class="method-name">NovinkiTitles</span>
+                  <em>
+(Проверяет отображение имен блоков на  <<Новинки>>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -458,9 +505,11 @@ Driver info: driver.version: unknown
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;user.Login&quot;/&gt;
+      &lt;class name=&quot;content.PlayMusicOnLand&quot;/&gt;
       &lt;class name=&quot;content.Headers&quot;/&gt;
       &lt;class name=&quot;content.Genres&quot;/&gt;
       &lt;class name=&quot;content.BlockTitles&quot;/&gt;
+      &lt;class name=&quot;content.SocialLinks&quot;/&gt;
       &lt;class name=&quot;content.Artists&quot;/&gt;
       &lt;class name=&quot;content.Bloks&quot;/&gt;
     &lt;/classes&gt;
@@ -476,7 +525,7 @@ Driver info: driver.version: unknown
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (6 classes)</span>
+                <span class="test-name">Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -518,6 +567,26 @@ Driver info: driver.version: unknown
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Soclinks</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">socialOnAzer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">socialOnMusic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">socialOnNovinki</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">socialOnPlaylist</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -534,80 +603,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(22);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'MusicGenres')
-data.setCell(0, 2, 'content.Genres')
-data.setCell(0, 3, 90035);
+data.setCell(0, 1, 'LogIn')
+data.setCell(0, 2, 'user.Login')
+data.setCell(0, 3, 14915);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LogIn')
-data.setCell(1, 2, 'user.Login')
-data.setCell(1, 3, 16102);
+data.setCell(1, 1, 'PlayMusic')
+data.setCell(1, 2, 'content.PlayMusicOnLand')
+data.setCell(1, 3, 10471);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AzerGenres')
-data.setCell(2, 2, 'content.Genres')
-data.setCell(2, 3, 5781);
+data.setCell(2, 1, 'AzerHeader')
+data.setCell(2, 2, 'content.Headers')
+data.setCell(2, 3, 5162);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'NovinkiHeader')
+data.setCell(3, 1, 'PlaylistHeader')
 data.setCell(3, 2, 'content.Headers')
-data.setCell(3, 3, 5713);
+data.setCell(3, 3, 4999);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'MusicTitles')
-data.setCell(4, 2, 'content.BlockTitles')
-data.setCell(4, 3, 5247);
+data.setCell(4, 1, 'NovinkiHeader')
+data.setCell(4, 2, 'content.Headers')
+data.setCell(4, 3, 4898);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AzerHeader')
+data.setCell(5, 1, 'MusicHeader')
 data.setCell(5, 2, 'content.Headers')
-data.setCell(5, 3, 5241);
+data.setCell(5, 3, 4717);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'MusicHeader')
+data.setCell(6, 1, 'UploadHeader')
 data.setCell(6, 2, 'content.Headers')
-data.setCell(6, 3, 5224);
+data.setCell(6, 3, 4368);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'PlaylistHeader')
-data.setCell(7, 2, 'content.Headers')
-data.setCell(7, 3, 4839);
+data.setCell(7, 1, 'AzerArtists')
+data.setCell(7, 2, 'content.Artists')
+data.setCell(7, 3, 3952);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'UploadHeader')
-data.setCell(8, 2, 'content.Headers')
-data.setCell(8, 3, 3945);
+data.setCell(8, 1, 'MusicGenres')
+data.setCell(8, 2, 'content.Genres')
+data.setCell(8, 3, 3752);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'AzerArtists')
-data.setCell(9, 2, 'content.Artists')
-data.setCell(9, 3, 3537);
+data.setCell(9, 1, 'AzerGenres')
+data.setCell(9, 2, 'content.Genres')
+data.setCell(9, 3, 3449);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'MusicArtists')
-data.setCell(10, 2, 'content.Artists')
-data.setCell(10, 3, 3203);
+data.setCell(10, 1, 'socialOnAzer')
+data.setCell(10, 2, 'content.SocialLinks')
+data.setCell(10, 3, 2871);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'CheckBlocks')
 data.setCell(11, 2, 'content.Bloks')
-data.setCell(11, 3, 2688);
+data.setCell(11, 3, 2816);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'NovinkiArtists')
-data.setCell(12, 2, 'content.Artists')
-data.setCell(12, 3, 2500);
+data.setCell(12, 1, 'MusicTitles')
+data.setCell(12, 2, 'content.BlockTitles')
+data.setCell(12, 3, 2701);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'NovinkiTitles')
-data.setCell(13, 2, 'content.BlockTitles')
-data.setCell(13, 3, 2432);
+data.setCell(13, 1, 'MusicArtists')
+data.setCell(13, 2, 'content.Artists')
+data.setCell(13, 3, 2698);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'blocksOnMusic')
-data.setCell(14, 2, 'content.Bloks')
-data.setCell(14, 3, 2331);
+data.setCell(14, 1, 'AzerTitles')
+data.setCell(14, 2, 'content.BlockTitles')
+data.setCell(14, 3, 2587);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'AzerTitles')
-data.setCell(15, 2, 'content.BlockTitles')
-data.setCell(15, 3, 2296);
+data.setCell(15, 1, 'socialOnMusic')
+data.setCell(15, 2, 'content.SocialLinks')
+data.setCell(15, 3, 2486);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'blocksOnNovinki')
+data.setCell(16, 1, 'blocksOnMusic')
 data.setCell(16, 2, 'content.Bloks')
-data.setCell(16, 3, 2171);
+data.setCell(16, 3, 2445);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'socialOnNovinki')
+data.setCell(17, 2, 'content.SocialLinks')
+data.setCell(17, 3, 2440);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'NovinkiArtists')
+data.setCell(18, 2, 'content.Artists')
+data.setCell(18, 3, 2435);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'blocksOnNovinki')
+data.setCell(19, 2, 'content.Bloks')
+data.setCell(19, 3, 2272);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'NovinkiTitles')
+data.setCell(20, 2, 'content.BlockTitles')
+data.setCell(20, 3, 2253);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'socialOnPlaylist')
+data.setCell(21, 2, 'content.SocialLinks')
+data.setCell(21, 3, 2217);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -622,18 +711,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">10 ignored methods</span>
+            <span class="header-content">14 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">content.BlockTitles</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">thearDown</span>
-                <br/>
-                <span class="ignored-method-name">getWebDriver</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">content.Headers</span>
               <div class="ignored-methods-div">
@@ -644,7 +724,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">content.Artists</span>
+              <span class="ignored-class-name">content.PlayMusicOnLand</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.Genres</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">thearDown</span>
                 <br/>
@@ -670,6 +759,24 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.SocialLinks</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">content.BlockTitles</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">thearDown</span>
+                <br/>
+                <span class="ignored-method-name">getWebDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -678,7 +785,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">content.Genres</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">content.Artists</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getWebDriver</span>
                 <span class="method-start">0 ms</span>
@@ -688,116 +795,149 @@ return data;
               <div class="chronological-class-name">user.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LogIn</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.PlayMusicOnLand</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">PlayMusic</span>
+                <span class="method-start">14937 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Genres</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">MusicGenres</span>
-                <span class="method-start">16124 ms</span>
+                <span class="method-start">25410 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.BlockTitles</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MusicTitles</span>
-                <span class="method-start">106177 ms</span>
+                <span class="method-start">29164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.SocialLinks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">socialOnMusic</span>
+                <span class="method-start">31866 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Artists</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MusicArtists</span>
-                <span class="method-start">111425 ms</span>
+                <span class="method-start">34354 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Bloks</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">blocksOnMusic</span>
-                <span class="method-start">114630 ms</span>
+                <span class="method-start">37053 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Genres</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AzerGenres</span>
-                <span class="method-start">116962 ms</span>
+                <span class="method-start">39500 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.BlockTitles</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NovinkiTitles</span>
-                <span class="method-start">122745 ms</span>
+                <span class="method-start">42951 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.SocialLinks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">socialOnNovinki</span>
+                <span class="method-start">45205 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Artists</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NovinkiArtists</span>
-                <span class="method-start">125178 ms</span>
+                <span class="method-start">47646 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Bloks</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">blocksOnNovinki</span>
-                <span class="method-start">127679 ms</span>
+                <span class="method-start">50082 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.BlockTitles</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AzerTitles</span>
-                <span class="method-start">129851 ms</span>
+                <span class="method-start">52357 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.SocialLinks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">socialOnAzer</span>
+                <span class="method-start">54945 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Artists</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AzerArtists</span>
-                <span class="method-start">132148 ms</span>
+                <span class="method-start">57817 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Bloks</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CheckBlocks</span>
-                <span class="method-start">135686 ms</span>
+                <span class="method-start">61770 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">content.SocialLinks</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">socialOnPlaylist</span>
+                <span class="method-start">64587 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">content.Headers</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MusicHeader</span>
-                <span class="method-start">138378 ms</span>
+                <span class="method-start">66807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">NovinkiHeader</span>
-                <span class="method-start">143604 ms</span>
+                <span class="method-start">71526 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AzerHeader</span>
-                <span class="method-start">149318 ms</span>
+                <span class="method-start">76426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PlaylistHeader</span>
-                <span class="method-start">154561 ms</span>
+                <span class="method-start">81589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UploadHeader</span>
-                <span class="method-start">159402 ms</span>
+                <span class="method-start">86589 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">content.Genres</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">content.Artists</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">thearDown</span>
-                <span class="method-start">163348 ms</span>
+                <span class="method-start">90958 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

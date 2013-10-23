@@ -8,7 +8,7 @@ import basic.BasicTestCase;
 
 public class PlayMusicOnLand extends BasicTestCase {
 	 //Play music on a page
-	@Test(priority=1, description="Проверяет играет ли трек на странице лендинга")
+	@Test(priority=1, description="РџСЂРѕРІРµСЂСЏРµС‚ РёРіСЂР°РµС‚ Р»Рё С‚СЂРµРє РЅР° СЃС‚СЂР°РЅРёС†Рµ СЃРєР°С‡РєРё")
 	public void PlayMusic () throws Exception {
 		 driver.get(musicUrl);
 		 playMusic();
@@ -23,8 +23,8 @@ public class PlayMusicOnLand extends BasicTestCase {
 	   Thread.sleep(1000);
 	   } else break;
 	   if(i>=30) { //set how long wait
-	    	 System.out.println("На странице "+driver.getCurrentUrl()+" не играет трек");
-		     Reporter.log("На странице "+driver.getCurrentUrl()+" не играет трек");
+	    	 System.out.println("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµ РёРіСЂР°РµС‚ С‚СЂРµРє");
+		     Reporter.log("РќР° СЃС‚СЂР°РЅРёС†Рµ "+driver.getCurrentUrl()+" РЅРµ РёРіСЂР°РµС‚ С‚СЂРµРє");
 		   throw new NullPointerException ();
 	   }   
 	   }
