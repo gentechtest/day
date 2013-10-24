@@ -13,7 +13,11 @@
       <class name="user.Login"/>
       <class name="content.PlayMusicOnLand"/>
       <class name="content.Headers"/>
-      
+       <class name="content.SocialLinks"/>
+      <class name="content.Genres"/>
+      <class name="content.BlockTitles"/>
+      <class name="content.Artists"/>
+      <class name="content.Bloks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
