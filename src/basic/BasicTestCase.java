@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -16,7 +17,7 @@ public class BasicTestCase {
 	 protected String searchWord = "Armin";
 	 protected static WebDriver driver;
 	 public UserData user = new UserData("testpasswordz", "Test_day");
-	 protected String musicUrl = "http://music.day.az";
+	 protected String musicUrl = "http://music.day.az/";
 	 protected String azerUrl = "http://music.day.az/audio_az";
 	 protected String novinkiUrl = "http://music.day.az/new";
 	 protected String playlistUrl = "http://music.day.az/user-993963";
@@ -37,5 +38,12 @@ public class BasicTestCase {
 	 public void thearDown() throws Exception {
 	        driver.quit();
 	  }
+	 public void assertPage(String yourPage) throws Exception {
+		 if(!yourPage.equals(driver.getCurrentUrl())){
+		 System.out.println("Неудалось перейти на "+yourPage);
+	     Reporter.log("Неудалось перейти на "+yourPage);
+	     throw new AssertionError ();
+		 }
+	 }
 	 
 }

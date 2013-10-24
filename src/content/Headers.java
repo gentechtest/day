@@ -1,7 +1,5 @@
 package content;
 
-import static org.testng.AssertJUnit.assertEquals;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -9,289 +7,218 @@ import org.testng.annotations.Test;
 import pageFactory.ContentPage;
 import basic.BasicTestCase;
 
-public class Headers extends BasicTestCase { 
-private ContentPage element = PageFactory.initElements(getWebDriver(), ContentPage.class);
-	
-	@Test(priority = 1,groups={"Header"}, description="Проверяет отображение ссылок на шапке <<Музыка>>")
+public class Headers extends BasicTestCase{
+	private ContentPage obj = PageFactory.initElements(getWebDriver(), ContentPage.class);
+	@Test(priority = 1, groups={"Header"}, description="Проверяем ссылки на шапке <<Музыка>>")
 	public void MusicHeader () throws Exception {
 		driver.get(musicUrl);
+		assertPage(musicUrl);
 		//music
-		try {
-		element.Music.click();
-	    assertEquals("МУЗЫКА",element.Music.getText());
+		try{
+		obj.Music.click();
+		assertPage(musicUrl);
+		if (!obj.Music.getText().equals("МУЗЫКА")) {
+			System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
 		}
-	    catch (AssertionError e) { 
-	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-	    	throw new AssertionError ();
-	    }
 	    //new music
-		try {
-	    element.NewMusic.isDisplayed();
-	    assertEquals("Новинки",element.NewMusic.getText());
-		}
-		catch (AssertionError e) { 
-		    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-		    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-		    throw new AssertionError ();
+	    obj.NewMusic.isDisplayed();
+	    if(!obj.NewMusic.getText().equals("Новинки")){
+	       System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+		   Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
 		}
 	    //azer music
-		try {
-	    element.Azerbaijanskaya.isDisplayed();
-	    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+	    obj.Azerbaijanskaya.isDisplayed();
+	    if(!obj.Azerbaijanskaya.getText().equals("Азербайджанская")){
+	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
 		}
-		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-		    	throw new AssertionError ();
-		    }
 	    //my play list
-		try {
-	    element.PlayList.isDisplayed();
-	    assertEquals("Мой плейлист",element.PlayList.getText());
-		}
-		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-		    	throw new AssertionError ();
-		    }
-		//upload
-		try {
-	    element.Upload.isDisplayed();
-	    assertEquals("Загрузить",element.Upload.getText());
-		}
-		 catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-		    	throw new AssertionError ();
-		    }
-	}
+	    obj.PlayList.isDisplayed();
+	    if (!obj.PlayList.getText().equals("Мой плейлист")){
+	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+	    }
+	    //upload
+	    obj.Upload.isDisplayed();
+	    if (!obj.Upload.getText().equals("Загрузить")){
+	    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+	    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+	    }
+		} catch (AssertionError e) {
+		  throw new AssertionError ();
+		}    
+}
 	/*------------------------------------------------------------------------------------------------------------------------*/
 		
-		@Test(priority = 2, groups={"Header"}, description="Проверяет отображение ссылок на шапке <<Новинки>>")
+		@Test(priority = 2, groups={"Header"}, description="Проверяем ссылки на шапке <<Новинки>>")
 		public void NovinkiHeader () throws Exception {
 			driver.get(novinkiUrl);
+			 assertPage(novinkiUrl);
 			//new music
 			try {
-		    element.NewMusic.click();
-		    assertEquals("Новинки",element.NewMusic.getText());
-			}
-			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    throw new AssertionError ();
-			}
+		    obj.NewMusic.click();
+		    assertPage(novinkiUrl);
+		    if(!obj.NewMusic.getText().equals("Новинки")){
+		        System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+		    }
 			//music
-			try {
-			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
-			}
-		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	throw new AssertionError ();
+			obj.Music.isDisplayed();
+		    if(!obj.Music.getText().equals("МУЗЫКА")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
 		    }
 		    
 		    //azer music
-			try {
-		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    obj.Azerbaijanskaya.isDisplayed();
+		    if(!obj.Azerbaijanskaya.getText().equals("Азербайджанская")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
 			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	throw new AssertionError ();
-			    }
 		    //my play list
-			try {
-		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	throw new AssertionError ();
+		    obj.PlayList.isDisplayed();
+		    if (!obj.PlayList.getText().equals("Мой плейлист")){
+			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
 			    }
 			//upload
-			try {
-		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	throw new AssertionError ();
+		    obj.Upload.isDisplayed();
+		    if (!obj.Upload.getText().equals("Загрузить")) { 
+			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
 			    }
+			} catch (AssertionError e) {
+				throw new AssertionError ();
+			}
 	}
 		/*-------------------------------------------------------------------------------------------------------------------*/
 
-		@Test(priority = 3, groups={"Header"}, description="Проверяет отображение ссылок на шапке <<Азербайджанская>>")
+		@Test(priority = 3, groups={"Header"}, description="Проверяем ссылки на шапке <<Азербайджанская>>")
 		public void AzerHeader () throws Exception {
 			driver.get(azerUrl);
-		    //azer music
+			 assertPage(azerUrl);
+		    //kazahs music
 			try {
-		    element.Azerbaijanskaya.click();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	throw new AssertionError ();
-			    }
+			//azer music
+			obj.Azerbaijanskaya.isDisplayed();
+			if(!obj.Azerbaijanskaya.getText().equals("Азербайджанская")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+				}
 			//new music
-			try {
-		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
-			}
-			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    throw new AssertionError ();
+		    obj.NewMusic.isDisplayed();
+		    if (!obj.NewMusic.getText().equals("Новинки")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
 			}
 			//music
-			try {
-			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
-			}
-		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<МУЗЫКА>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<МУЗЫКА>>");
-		    	throw new AssertionError ();
+			obj.Music.isDisplayed();
+		    if (!obj.Music.getText().equals("МУЗЫКА")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
 		    }
 		    //my play list
-			try {
-		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	throw new AssertionError ();
+		    obj.PlayList.isDisplayed();
+		    if (!obj.PlayList.getText().equals("Мой плейлист")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
 			    }
 			//upload
-			try {
-		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	throw new AssertionError ();
+		    obj.Upload.isDisplayed();
+		    if (!obj.Upload.getText().equals("Загрузить")){ 
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
 			    }
+		   }catch (AssertionError e){
+			throw new AssertionError ();
+		}
 	}
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 		
-		@Test(priority = 4, groups={"Header"}, description="Проверяет отображение ссылок на шапке  <<Мой плейлист>>")
+		@Test(priority = 4, groups={"Header"}, description="Проверяем ссылки на шапке <<Мой плейлист>>")
 		public void PlaylistHeader () throws Exception {
 			driver.get(playlistUrl);
+			assertPage(playlistUrl);
 			//my play list
 			try {
-		    element.PlayList.click();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	throw new AssertionError ();
+		    obj.PlayList.click();
+		    assertPage(playlistUrl);
+		    if (!obj.PlayList.getText().equals("Мой плейлист")){ 
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
 			    }
 		    //azer music
-			try {
-		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    obj.Azerbaijanskaya.isDisplayed();
+		    if(!obj.Azerbaijanskaya.getText().equals("Азербайджанская")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
 			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	throw new AssertionError ();
-			    }
 			//new music
-			try {
-		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
-			}
-			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    throw new AssertionError ();
+		    obj.NewMusic.isDisplayed();
+		    if (!obj.NewMusic.getText().equals("Новинки")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
 			}
 			//music
-			try {
-			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
-			}
-		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	throw new AssertionError ();
+			obj.Music.isDisplayed();
+		    if (!obj.Music.getText().equals("МУЗЫКА")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
 		    }
 			//upload
-			try {
-		    element.Upload.isDisplayed();
-		    assertEquals("Загрузить",element.Upload.getText()); 
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	throw new AssertionError ();
+		    obj.Upload.isDisplayed();
+		    if (!obj.Upload.getText().equals("Загрузить")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
 			    }
+			}catch (AssertionError e){
+				throw new AssertionError ();
+
+			}
 	}
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
-		@Test(priority = 4, groups={"Header"}, description="Проверяет отображение ссылок на шапке <<Загрузить>>")
+		@Test(priority = 4, groups={"Header"}, description="Проверяем ссылки на шапке <<Загрузить>>")
 		public void UploadHeader () throws Exception {
-			driver.get(playlistUrl);
+			driver.get(uploadUrl);
+			assertPage(uploadUrl);
 			//upload
-			try {
-		    element.Upload.click();
-		    assertEquals("Загрузить",element.Upload.getText()); 
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Загрузить>>");
-			    	throw new AssertionError ();
+		try{
+		    obj.Upload.click();
+		    assertPage(uploadUrl);
+		    if (!obj.Upload.getText().equals("Загрузить")){ 
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Загрузить>>");
 			    }
 			//my play list
-			try {
-		    element.PlayList.isDisplayed();
-		    assertEquals("Мой плейлист",element.PlayList.getText());
-			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Мой плейлист>>");
-			    	throw new AssertionError ();
+		    obj.PlayList.isDisplayed();
+		    if (!obj.PlayList.getText().equals("Мой плейлист")){
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Мой плейлист>>");
 			    }
-		    //kazahs music
-			try {
-		    element.Azerbaijanskaya.isDisplayed();
-		    assertEquals("Азербайджанская",element.Azerbaijanskaya.getText());
+		    //azer music
+		    obj.Azerbaijanskaya.isDisplayed();
+		    if(!obj.Azerbaijanskaya.getText().equals("Азербайджанская")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Азербайджанская>>");
 			}
-			 catch (AssertionError e) { 
-			    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Азербайджанская>>");
-			    	throw new AssertionError ();
-			    }
 			//new music
-			try {
-		    element.NewMusic.isDisplayed();
-		    assertEquals("Новинки",element.NewMusic.getText());
-			}
-			catch (AssertionError e) { 
-			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Новинки>>");
-			    throw new AssertionError ();
+		    obj.NewMusic.isDisplayed();
+		    if (!obj.NewMusic.getText().equals("Новинки")){ 
+			    System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
+			    Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Новинки>>");
 			}
 			//music
-			try {
-			element.Music.isDisplayed();
-		    assertEquals("МУЗЫКА",element.Music.getText());
-			}
-		    catch (AssertionError e) { 
-		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается ссылка <<Музыка>>");
-		    	throw new AssertionError ();
+			obj.Music.isDisplayed();
+		    if (!obj.Music.getText().equals("МУЗЫКА")){
+		    	System.out.println("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
+		    	Reporter.log("На странице "+driver.getCurrentUrl()+" неотображается линк <<Музыка>>");
 		    }
-	}
+		    }catch (AssertionError e){
+		    throw new AssertionError ();
+		    }
+		}
 }
-		
 		
 		

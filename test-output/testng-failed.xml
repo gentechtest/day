@@ -4,15 +4,19 @@
   <listeners>
     <listener class-name="basic.Log"/>
   </listeners>
-  <test name="Test(failed)" parallel="none">
+  <test name="Music.day(failed)" parallel="none">
     <classes>
-      <class name="content.Genres">
+      <class name="content.Headers">
         <methods>
-          <include name="MusicGenres"/>
+          <include name="UploadHeader"/>
+          <include name="MusicHeader"/>
+          <include name="NovinkiHeader"/>
+          <include name="PlaylistHeader"/>
+          <include name="AzerHeader"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- content.Genres -->
+      </class> <!-- content.Headers -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Music.day(failed) -->
 </suite> <!-- Failed suite [Suite] -->
