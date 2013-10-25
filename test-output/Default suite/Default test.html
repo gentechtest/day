@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 22 15:16:59 EEST 2013</td>
+<td>Started on:</td><td>Fri Oct 25 14:35:51 EEST 2013</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26171 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14172 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,20 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='content.BlockTitles.MusicTitles()'><b>MusicTitles</b><br>Test class: content.BlockTitles<br>Test method: Checking block titles on <<Music>><br/>
-<a href="#Output-1937214519" onClick='toggleBox("Output-1937214519", this, "Show output", "Hide output");'>Show output</a>
+<td title='content.PlayMusicOnLand.PlayMusic()'><b>PlayMusic</b><br>Test class: content.PlayMusicOnLand<br>Test method: Проверяет играет ли трек на странице скачки<br/>
+<a href="#Output-1615801620" onClick='toggleBox("Output-1615801620", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1937214519" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1937214519">
-On page http://music.day.az/ non-display , block title  <<���-�����������>><br/>
+<a href="#Output-1615801620" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1615801620">
+На странице http://music.day.az/225987-petula-clark-darling-verzeih-(now-that-your-gone) не кликает на кнопку <<play>><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at content.BlockTitles.MusicTitles(BlockTitles.java:23)
+<td><div><pre>java.lang.NullPointerException
+	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:25)
+	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,13 +110,10 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1937214519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1937214519'><pre>org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Driver info: driver.version: unknown
-	at content.BlockTitles.MusicTitles(BlockTitles.java:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1615801620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615801620'><pre>java.lang.NullPointerException
+	at content.PlayMusicOnLand.playMusic(PlayMusicOnLand.java:25)
+	at content.PlayMusicOnLand.PlayMusic(PlayMusicOnLand.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,26 +139,8 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>11</td>
-<td>content.BlockTitles@38946002</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='content.BlockTitles.AzerTitles()'><b>AzerTitles</b><br>Test class: content.BlockTitles<br>Test method: Checking blocks titles on <<Azerbaijan>></td>
-<td></td>
-<td>2</td>
-<td>content.BlockTitles@38946002</td></tr>
-<tr>
-<td title='content.BlockTitles.NovinkiTitles()'><b>NovinkiTitles</b><br>Test class: content.BlockTitles<br>Test method: Checking blocks title on  <<Music>></td>
-<td></td>
-<td>5</td>
-<td>content.BlockTitles@38946002</td></tr>
+<td>10</td>
+<td>content.PlayMusicOnLand@423798e2</td></tr>
 </table><p>
 </body>
 </html>

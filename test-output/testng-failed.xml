@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="none">
-  <listeners>
-    <listener class-name="basic.Log"/>
-  </listeners>
-  <test name="Music.day(failed)" parallel="none">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="content.Headers">
+      <class name="content.PlayMusicOnLand">
         <methods>
-          <include name="UploadHeader"/>
-          <include name="MusicHeader"/>
-          <include name="NovinkiHeader"/>
-          <include name="PlaylistHeader"/>
-          <include name="AzerHeader"/>
+          <include name="PlayMusic"/>
           <include name="thearDown"/>
           <include name="getWebDriver"/>
         </methods>
-      </class> <!-- content.Headers -->
+      </class> <!-- content.PlayMusicOnLand -->
     </classes>
-  </test> <!-- Music.day(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
