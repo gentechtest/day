@@ -12,6 +12,7 @@
     <classes>
       <class name="user.Login"/>
       <class name="content.PlayMusicOnLand"/>
+      <class name="download.Download"/>
       <class name="content.Headers"/>
        <class name="content.SocialLinks"/>
       <class name="content.Genres"/>
