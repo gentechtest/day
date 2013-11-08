@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Music.day</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/3/5</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 24 16:45:23 EEST 2013</td>
+<td>Started on:</td><td>Wed Nov 06 00:05:45 EET 2013</td>
 </tr>
-<tr><td>Total time:</td><td>56 seconds (56282 ms)</td>
+<tr><td>Total time:</td><td>154 seconds (154055 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,46 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='content.Headers.AzerHeader()'><b>AzerHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Азербайджанская>><br/>
-<a href="#Output-450845582" onClick='toggleBox("Output-450845582", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-450845582" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-450845582">
-На странице http://music.day.az/audio_az неотображается линк <<Мой плейлист>><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='user.Login.LogIn()'><b>LogIn</b><br>Test class: user.Login<br>Test method: Тестируем логин</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.09 seconds
 Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
 System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.AzerHeader(Headers.java:128)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace450845582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace450845582'><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy7.clear(Unknown Source)
+	at pageFactory.MethodsPage.type(MethodsPage.java:16)
+	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
+	at user.Login.LogIn(Login.java:16)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
 System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7736)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10437)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:386)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477920005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477920005'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.09 seconds
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -122,14 +116,17 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.AzerHeader(Headers.java:128)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy7.clear(Unknown Source)
+	at pageFactory.MethodsPage.type(MethodsPage.java:16)
+	at pageFactory.LoginPage.loginAs(LoginPage.java:35)
+	at user.Login.LogIn(Login.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -154,28 +151,93 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7736)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10437)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:386)
 </pre></div></td>
-<td>13</td>
-<td>content.Headers@42701c57</td></tr>
+<td>15</td>
+<td>user.Login@d929211</td></tr>
 <tr>
-<td title='content.Headers.MusicHeader()'><b>MusicHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Музыка>><br/>
-<a href="#Output-2038018161" onClick='toggleBox("Output-2038018161", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2038018161" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2038018161">
-На странице http://music.day.az/ неотображается линк <<Мой плейлист>><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+<td title='download.Download.download()'><b>download</b><br>Test class: download.Download<br>Test method: Проверяет скачку треков </td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Command duration or timeout: 10.08 seconds
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at download.Download.download(Download.java:50)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace370057006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370057006'><pre>org.openqa.selenium.WebDriverException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Command duration or timeout: 10.08 seconds
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at download.Download.download(Download.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIIOService.newURI]
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+</pre></div></td>
+<td>48</td>
+<td>download.Download@52ace46a</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnPlaylist()'><b>socialOnPlaylist</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Мой плейлист>></td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
 Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
 System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
@@ -186,18 +248,23 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
 	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.MusicHeader(Headers.java:43)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2038018161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2038018161'><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
+	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2096884715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2096884715'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
 Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
 System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Session ID: 5f86bb21-10c6-4968-ab29-ac26131990fe
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -212,7 +279,8 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
 	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.MusicHeader(Headers.java:43)
+	at pageFactory.SocialLinkPage.checkSocialLinks(SocialLinkPage.java:49)
+	at content.SocialLinks.socialOnPlaylist(SocialLinks.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -237,176 +305,131 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>20</td>
-<td>content.Headers@42701c57</td></tr>
-<tr>
-<td title='content.Headers.NovinkiHeader()'><b>NovinkiHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Новинки>><br/>
-<a href="#Output-851417480" onClick='toggleBox("Output-851417480", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-851417480" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-851417480">
-На странице http://music.day.az/new неотображается линк <<Мой плейлист>><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.00 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;pluso-wrap&apos;]/a[1]&quot;}
 Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
 System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.NovinkiHeader(Headers.java:86)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace851417480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace851417480'><pre>org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=30.0.1599.101)
-  (Driver info: chromedriver=2.2,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.00 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_25&apos;
-Session ID: 6fdb7d1bd394e52a44c3ec790f96ea2c
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={chromedriverVersion=2.2}, rotatable=false, locationContextEnabled=true, version=30.0.1599.101, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at content.Headers.NovinkiHeader(Headers.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4154419128865426311webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:386)
 </pre></div></td>
-<td>14</td>
-<td>content.Headers@42701c57</td></tr>
+<td>11</td>
+<td>content.SocialLinks@2b5476cc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='content.Headers.PlaylistHeader()'><b>PlaylistHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Мой плейлист>><br/>
-<a href="#Output-521213907" onClick='toggleBox("Output-521213907", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-521213907" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-521213907">
-Неудалось перейти на http://music.day.az/user-993963<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError
-	at content.Headers.PlaylistHeader(Headers.java:176)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521213907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace521213907'><pre>java.lang.AssertionError
-	at content.Headers.PlaylistHeader(Headers.java:176)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>2</td>
-<td>content.Headers@42701c57</td></tr>
+<td title='content.Artists.AzerArtists()'><b>AzerArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Азербайджанская>></td>
+<td></td>
+<td>4</td>
+<td>content.Artists@4fc9a3d6</td></tr>
 <tr>
-<td title='content.Headers.UploadHeader()'><b>UploadHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Загрузить>><br/>
-<a href="#Output-1385780363" onClick='toggleBox("Output-1385780363", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1385780363" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1385780363">
-Неудалось перейти на http://music.day.az/upload<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError
-	at basic.BasicTestCase.assertPage(BasicTestCase.java:45)
-	at content.Headers.UploadHeader(Headers.java:185)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1385780363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1385780363'><pre>java.lang.AssertionError
-	at basic.BasicTestCase.assertPage(BasicTestCase.java:45)
-	at content.Headers.UploadHeader(Headers.java:185)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
+<td title='content.Genres.AzerGenres()'><b>AzerGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на <<Азербайджанская>></td>
+<td></td>
+<td>5</td>
+<td>content.Genres@5c769de6</td></tr>
+<tr>
+<td title='content.BlockTitles.AzerTitles()'><b>AzerTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение имен блоков на  <<Азербайджанская>></td>
+<td></td>
 <td>3</td>
-<td>content.Headers@42701c57</td></tr>
+<td>content.BlockTitles@1cd2efb2</td></tr>
+<tr>
+<td title='content.Bloks.CheckBlocks()'><b>CheckBlocks</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на  <<Азербайджанская>></td>
+<td></td>
+<td>4</td>
+<td>content.Bloks@3643614d</td></tr>
+<tr>
+<td title='content.Artists.MusicArtists()'><b>MusicArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Музыка>></td>
+<td></td>
+<td>4</td>
+<td>content.Artists@4fc9a3d6</td></tr>
+<tr>
+<td title='content.Genres.MusicGenres()'><b>MusicGenres</b><br>Test class: content.Genres<br>Test method: Проверяет отображение жанров на  <<Музыка>></td>
+<td></td>
+<td>5</td>
+<td>content.Genres@5c769de6</td></tr>
+<tr>
+<td title='content.BlockTitles.MusicTitles()'><b>MusicTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение имени блока на <<Музыка>></td>
+<td></td>
+<td>3</td>
+<td>content.BlockTitles@1cd2efb2</td></tr>
+<tr>
+<td title='content.Artists.NovinkiArtists()'><b>NovinkiArtists</b><br>Test class: content.Artists<br>Test method: Проверяет отображение артистов на <<Новинки>></td>
+<td></td>
+<td>4</td>
+<td>content.Artists@4fc9a3d6</td></tr>
+<tr>
+<td title='content.BlockTitles.NovinkiTitles()'><b>NovinkiTitles</b><br>Test class: content.BlockTitles<br>Test method: Проверяет отображение имен блоков на  <<Новинки>></td>
+<td></td>
+<td>5</td>
+<td>content.BlockTitles@1cd2efb2</td></tr>
+<tr>
+<td title='content.PlayMusicOnLand.PlayMusic()'><b>PlayMusic</b><br>Test class: content.PlayMusicOnLand<br>Test method: Проверяет играет ли трек на странице скачки</td>
+<td></td>
+<td>14</td>
+<td>content.PlayMusicOnLand@1c9393e6</td></tr>
+<tr>
+<td title='content.Bloks.blocksOnMusic()'><b>blocksOnMusic</b><br>Test class: content.Bloks<br>Test method: Проверяет отображение блоков на  <<Музыка>></td>
+<td></td>
+<td>3</td>
+<td>content.Bloks@3643614d</td></tr>
+<tr>
+<td title='content.Bloks.blocksOnNovinki()'><b>blocksOnNovinki</b><br>Test class: content.Bloks<br>Test method: Проверяет оображение блоков на <<Новинки>></td>
+<td></td>
+<td>3</td>
+<td>content.Bloks@3643614d</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnAzer()'><b>socialOnAzer</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Азербайджанская>></td>
+<td></td>
+<td>3</td>
+<td>content.SocialLinks@2b5476cc</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnMusic()'><b>socialOnMusic</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Музыка>></td>
+<td></td>
+<td>7</td>
+<td>content.SocialLinks@2b5476cc</td></tr>
+<tr>
+<td title='content.SocialLinks.socialOnNovinki()'><b>socialOnNovinki</b><br>Test class: content.SocialLinks<br>Test method: Проверяет отображение блока соц сетей на  <<Новинки>></td>
+<td></td>
+<td>3</td>
+<td>content.SocialLinks@2b5476cc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='content.Headers.AzerHeader()'><b>AzerHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Азербайджанская>></td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='content.Headers.MusicHeader()'><b>MusicHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Музыка>></td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='content.Headers.NovinkiHeader()'><b>NovinkiHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Новинки>></td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='content.Headers.PlaylistHeader()'><b>PlaylistHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Мой плейлист>></td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='content.Headers.UploadHeader()'><b>UploadHeader</b><br>Test class: content.Headers<br>Test method: Проверяем ссылки на шапке <<Загрузить>></td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>

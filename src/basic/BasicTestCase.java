@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeTest;
 
 import data.UserData;
 
-//import data.UserData;
 
 public class BasicTestCase {
 	 public String baseUrl = ("http://www.music.day.az/");
@@ -25,9 +24,9 @@ public class BasicTestCase {
 	 @BeforeTest
 	 protected static WebDriver getWebDriver() {
 	  if (driver == null) {
-	   System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-	   driver = new ChromeDriver();
-	  //driver = new FirefoxDriver();
+		  
+	  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+	  driver = new ChromeDriver();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
 	  driver.manage().window().maximize();
